@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hoverable {
+    color: #d39d55;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.hoverable:hover {
+    color: #aa7e45;
+    text-decoration: none;
+}
+
+.words {
+    font-size: 1.2rem;
+    color: #756c5c;
+}
+
+.chapter {
+    font-size: 4rem;
+    color: #a3947c;
+    text-align: center;
+}
+
+.chapters-body {
+    background-color: #543a14;
+    font-family: "STIX Two Text", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#card {
+    background-color: #fff0dc;
+    padding: 2em 4em;
+}
+
+.back-button {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.back-button x-back-button {
+    display: block;
+    pointer-events: auto;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background-color: #E7D4B5;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+}
+
+.sidebar.visible {
+    transform: translateX(0);
+}
+
+.hidden {
+    display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #7e8092;
+}
+
+.word {
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.word .details {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+}
+
+#word-name, #word-pronunciation {
+    margin: 0; /* Remove default margin */
+}
+
+#play-audio-word {
+    margin-left: 5px; /* Space between the text and the icon */
+}
+#close-sidebar {
+    display: inline;
+    cursor: pointer;
+    font-size: 2em;
+    color: #543a14;
+    background-color: #F6E6CB;
+    padding: 2px 15px;
+    margin-left: 10px;
+    font-weight: 900;
+
+}
+#word-name {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #543a14;
+}
+ul, li {
+    list-style-type: none; /* Remove default list markers */
+    padding: 10px; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+
+ul li:last-child {
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+ul .word p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+ul .word span {
+    font-size: 12px;
+        color: #989898;
+
+}
+
+ul .word i {
+    color: #999;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+ul .content {
+    height: 215px;
+    overflow-y: auto;
+}
+
+ul .content::-webkit-scrollbar {
+    width: 0px;
+}
+
+.content li .details {
+
+    padding-left: 10px;
+    border-radius: 4px 0 0 4px;
+    border-left: 3px solid #543a14;
+    background: #F6E6CB;
+}
+
+.content li p {
+
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.content li span {
+
+    font-size: 15px;
+    color: #7E7E7E;
+}
+
+.content .synonyms .list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content .synonyms span {
+    cursor: pointer;
+    margin-right: 5px;
+    text-decoration: underline;
+}

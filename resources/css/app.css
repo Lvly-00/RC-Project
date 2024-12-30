@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active-link {
+    background-color: #555252; /* Red color for active link */
+    color: white; /* White text color for active link */
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: underline; /* Optional: underline the active link */
+}
+
+.back-button {
+    display: inline; /* Ensures the anchor tag only takes up space for the button */
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove any default margin */
+}
+
+.back-button x-back-button {
+    display: block; /* Ensures the button is a block element */
+    pointer-events: auto; /* Ensures the button is clickable */
+}
+
+.words {
+    font-size: 1.5rem;
+    color: #756c5c;
+}
+
