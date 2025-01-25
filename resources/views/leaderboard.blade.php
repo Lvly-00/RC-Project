@@ -1,17 +1,37 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Florante at Laura</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <x-navigation-bar/>
+<html lang="en">
 
-    <div class="container"><br/><br/>
-    <div class="row">
-    <p><h3>You're Top 1!  {{ Auth::user()->name }} </h3> </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=// resources/views/leaderboard.blade.php
+    <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+    @vite(['resources\css\leaderboard.css', 'resources\js\leaderboard.js'])
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Leaderboard</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Total Score</th>
+                </tr>
+            </thead>
+            <tbody>                 
+                @foreach ($leaderboard as $entry)
+                    <tr>
+                        <td>{{ $entry->name }}</td>
+                        <td>{{ $entry->total_score }}</td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
     </div>
-    </div>
-    @yield('content')
 </body>
+
 </html>

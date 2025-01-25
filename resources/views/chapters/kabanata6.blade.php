@@ -3,9 +3,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <div class="shrink-0 flex items-center">
-        <a href="{{ route('chapters') }}">Back</a>
-    </div>
+
     {{-- FROM HERE MAG-EEDIT --}}
     {{-- JUST COPY & PASTE THE WHOLE CODE FOR TEMPLATE. --}}
     {{-- NO NEED NA GALAWIN ANG AUDIO FIILE --}}
@@ -14,9 +12,40 @@
 
     <div class="words">
         <p>69 Nagkataong siyang pagdating sa gubat
-            ng isang gererong bayani ang tikas;
-            putong na turbante ay kalingas-lingas,
-            pananamit-Moro sa Persiyang S'yudad.
+            ng isang
+            <span class="hoverable"
+                data-word="gererong"
+                data-audio="path/to/audio/mapanglaw.mp3"
+                data-definition-tag="Isang mandirigma o sundalo."
+                data-definition-eng="Warrior, soldier."
+                data-example="Ang gererong si Lapu-Lapu ay isang bayani ng Mactan."
+                data-antonyms="Kawalan ng tapang, mahina"
+                data-synonyms="Mandirigma, kawal">gererong</span> bayani ang
+            <span class="hoverable"
+                data-word="tikás"
+                data-audio="path/to/audio/mapanglaw.mp3"
+                data-definition-tag="Magandang hitsura o anyo."
+                data-definition-eng="Stature, physique."
+                data-example="Siya ay kilala sa kanyang tikás at lakas."
+                data-antonyms="Pangit, hindi kaakit-akit"
+                data-synonyms="Katawan, anyo">tikás</span>;
+            <span class="hoverable"
+                data-word="putong"
+                data-audio="path/to/audio/mapanglaw.mp3"
+                data-definition-tag="Kasuotang pang-ulo, kadalasan sa mga tradisyon o seremonya."
+                data-definition-eng="Headdress, turban."
+                data-example="Ang putong na suot niya ay mula sa kanilang lahi."
+                data-antonyms="Wala, hindi pang-ulo"
+                data-synonyms="Salungso, hiyas">putong</span> na turbante ay kalingas-lingas,
+            pananamit-Moro sa
+            <span class="hoverable"
+                data-word="Perysiyang"
+                data-audio="path/to/audio/mapanglaw.mp3"
+                data-definition-tag="May kaugnayan sa Persia o Iranian."
+                data-definition-eng="Persian."
+                data-example="Ang Perysiyang sining ay kilala sa buong mundo."
+                data-antonyms="Hindi Iraniano, hindi Persa"
+                data-synonyms="Iraniano, Persa">Perysiyang</span> S'yudad.
             <span class="hoverable"
                 data-word=""
                 data-audio="path/to/audio/mapanglaw.mp3"
@@ -33,7 +62,16 @@
         <p>70 Pinigil ang lakad at nagtanaw-tanaw,
             anaki'y ninita ng pagpapahingahan;
             'di kaginsa-ginsa'y ipinagtapunan
-            ang pika't adarga't nagdaop ng kamay.
+            ang pika't
+            <span class="hoverable"
+                data-word="adarga"
+                data-audio="path/to/audio/mapanglaw.mp3"
+                data-definition-tag="Kalasag o panangga na ginagamit sa digmaan."
+                data-definition-eng="Shield."
+                data-example="Ginamit niya ang adarga upang protektahan ang sarili."
+                data-antonyms="Walang kalasag, hindi protektado"
+                ```blade
+                data-synonyms="Panangga, kalasag">adarga</span> at nagdaop ng kamay.
             <span class="hoverable"
                 data-word=""
                 data-audio="path/to/audio/mapanglaw.mp3"
@@ -65,7 +103,15 @@
         <p>72 Nang magdamdam-ngawit sa pagayong anyo,
             sa puno ng isang kahoy ay umupo;
             nagwikang, O palad!, sabay ang pagtulo
-            sa mata ng luhang anaki'y palaso.
+            sa mata ng luhang anaki'y
+            <span class="hoverable"
+                data-word="palaso"
+                data-audio="path/to/audio/mapanglaw.mp3"
+                data-definition-tag="Palakol o armas na may matulis na dulo."
+                data-definition-eng="Arrow, dart."
+                data-example="Ang palaso ay ginamit sa sinaunang digmaan."
+                data-antonyms="Walang matulis na bagay"
+                data-synonyms="Sagwan, panangga">palaso</span>.
             <span class="hoverable"
                 data-word=""
                 data-audio="path/to/audio/mapanglaw.mp3"
@@ -80,7 +126,15 @@
     <div class="words">
         <p>73 Ulo'y ipinatong sa kaliwang kamay
             at saka tinutop ang noo sa kanan;
-            anaki'y mayroong gunamgunam —
+            anaki'y mayroong
+            <span class="hoverable"
+                data-word="guniguni"
+                data-audio="path/to/audio/mapanglaw.mp3"
+                data-definition-tag="Pantasya o pangarap."
+                data-definition-eng="Dream, imagination."
+                data-example="Ang kanyang guniguni ay puno ng mga kulay at hugis."
+                data-antonyms="Realidad, totoo"
+                data-synonyms="Pantasya, panaginip">guniguni</span> —
             isang mahalagang nalimutang bagay.
             <span class="hoverable"
                 data-word=""
@@ -92,7 +146,6 @@
                 data-synonyms=""> </span> </p>
     </div>
     <br>
-
 
     <div class="words">
         <p>74 Malao'y humilig, nagwalang-bahala,
@@ -133,7 +186,8 @@
             'di ko itutulot! ang ipinahayag.
             <span class="hoverable"
                 data-word=""
-                data-audio="path/to/audio/mapanglaw.mp3"
+                data-audio=" ```blade
+path/to/audio/mapanglaw.mp3"
                 data-definition-tag=""
                 data-definition-eng=""
                 data-example=""
@@ -157,7 +211,6 @@
                 data-synonyms=""> </span> </p>
     </div>
     <br>
-
 
     <div class="words">
         <p>78 Bababa si Marte mula sa itaas,
@@ -239,64 +292,28 @@
     </div>
     <br>
 
-
-    {{-- TASS LANG EDITABLE --}}
-    {{-- NO NEED NA GALAWIN. SA TAAS LANG ANG I-EDIT --}}
-    <div id="sidebar" class="sidebar hidden">
-        <button id="close-sidebar" class="close-button">&times;</button>
-
-        <div id="sidebar-content" class="overflow-auto max-h-screen p-4">
-
-            <li class="word">
-                <div class="details">
-                    <p id="word-name" style="display: inline;">__</p>
-                    <span id="word-pronunciation" style="display: inline;">_ _</span>
-                    <i class="fas fa-volume-up" id="play-audio-word" style="cursor: pointer; margin-left: 5px;"></i> <!-- Audio icon for the word -->
-                    <audio id="audio-word" src="" controls hidden></audio>
-                </div>
-            </li>
-            <div class="content">
-                <li class="meaning">
-                    <div class="details">
-                        <p>Meaning (Tagalog)</p>
-                        <span id="meaning-text">___</span>
-                    </div>
-                </li>
-                <li class="meaning-eng">
-                    <div class="details">
-                        <p>Meaning (English)</p>
-                        <span id="meaning-eng-text">___</span>
-                    </div>
-                </li>
-                <li class="example">
-                    <div class="details">
-                        <p>Example</p>
-                        <span id="example-text">___</span>
-                    </div>
-                </li>
-                <li class="synonyms">
-                    <div class="details">
-                        <p>Synonyms</p>
-                        <span id="synonyms-text">___</span>
-                    </div>
-                </li>
-                <li class="antonyms">
-                    <div class="details">
-                        <p>Antonyms</p>
-                        <span id="antonyms-text">___</span>
-                    </div>
-                </li>
+    <hr>
+        <h3>Comments</h3>
+        <ul>
+            @if ($comments->isEmpty())
+                <p>No comments yet. Be the first to comment!</p>
+            @else
+                @foreach ($comments as $comment)
+                    <li>
+                        <strong>{{ $comment->user->name }}</strong>: {{ $comment->comment }}
+                        <em>({{ $comment->created_at->diffForHumans() }})</em>
+                    </li>
+                @endforeach
+            @endif
+        </ul>
+        <form action="{{ route('comments.store') }}" method="POST">
+            @csrf
+            <input type="hidden" name="chapter_number" value="{{ $number }}">
+            <div class="comment-container">
+                <textarea name="comment" id="comment" rows="2" required placeholder="comment as {{ Auth::user()->name }}"></textarea>
+                <button type="submit" class="send-icon">
+                    submit
+                </button>
             </div>
-        </div>
-    </div>
-{{--
-    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-        <x-nav-link :href="route('games.show', ['number'])">
-            {{ __('Game') }}
-        </x-nav-link>
-    </div> --}}
-
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
-
+        </form>
 </x-chapter-layout>

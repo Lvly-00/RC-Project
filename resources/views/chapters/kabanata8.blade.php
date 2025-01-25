@@ -3,9 +3,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <div class="shrink-0 flex items-center">
-        <a href="{{ route('chapters') }}">Back</a>
-    </div>
+
     {{-- FROM HERE MAG-EEDIT --}}
     {{-- JUST COPY & PASTE THE WHOLE CODE FOR TEMPLATE. --}}
     {{-- NO NEED NA GALAWIN ANG AUDIO FIILE --}}
@@ -13,18 +11,19 @@
     <br>
 
     <div class="words">
-        <p>98 Sandaling tumigil itong nananangis
+        <p>98 Sandaling tumigil itong
+            <span class="hoverable"
+                data-word="nangangis"
+                data-audio="path/to/audio/mapanglaw.mp3"
+                data-definition-tag="Umiiyak, naglalambing."
+                data-definition-eng="Weeping, crying."
+                data-example="Ang bata ay nangangis dahil nawala ang kanyang laruan."
+                data-antonyms="Ngiti, kasiyahan"
+                data-synonyms="Umiiyak, naglalambing">nangangis</span>
             binigyang panahong luha'y tumagistis
             niyong naaawang Morong nakikinig
             sa habag ay halos magputok ang dibdib.
-            <span class="hoverable"
-                data-word=""
-                data-audio="path/to/audio/mapanglaw.mp3"
-                data-definition-tag=""
-                data-definition-eng=""
-                data-example=""
-                data-antonyms=""
-                data-synonyms=""> </span> </p>
+            </p>
     </div>
     <br>
 
@@ -33,82 +32,87 @@
         <p>99 Tinutop ang puso at saka nagsaysay,
             Kailan, aniya, luha ko'y bubukal
             ng habag kay ama at panghihinayang
-            para ng panaghoy ng nananambitan?
+            para ng
             <span class="hoverable"
-                data-word=""
+                data-word="panaghoy"
                 data-audio="path/to/audio/mapanglaw.mp3"
-                data-definition-tag=""
-                data-definition-eng=""
-                data-example=""
-                data-antonyms=""
-                data-synonyms=""> </span> </p>
+                data-definition-tag="Pagluha, iyak."
+                data-definition-eng="Lament, sorrow."
+                data-example="Ang panaghoy ng ina ay maririnig sa buong bahay."
+                data-antonyms="Tawanan, kasiyahan"
+                data-synonyms="Pagluha, iyak">panaghoy</span> ng nananambitan?
+            </p>
     </div>
     <br>
 
     <div class="words">
-        <p>100 Sa sintang inagaw ang itinatangis,
+        <p>100 Sa
+            <span class="hoverable"
+                data-word="sinta"
+                data-audio="path/to/audio/mapanglaw.mp3"
+                data-definition-tag="Mahal, kasinta."
+                data-definition-eng="Beloved, sweetheart."
+                data-example="Ikaw ang aking sinta at walang iba."
+                data-antonyms="Kaaway, kalaban"
+                data-synonyms="Mahal, kasinta">sinta</span>ng inagaw ang itinatangis,
             dahilan ng aking luhang nagbabatis;
             yao'y nananaghoy dahil sa pag-ibig
             sa amang namatay na mapagtangkilik.
-            <span class="hoverable"
-                data-word=""
-                data-audio="path/to/audio/mapanglaw.mp3"
-                data-definition-tag=""
-                data-definition-eng=""
-                data-example=""
-                data-antonyms=""
-                data-synonyms=""> </span> </p>
+           </p>
     </div>
     <br>
 
+    <div class ```blade
     <div class="words">
         <p>101 Kung ang walang patid na ibinabaha
             ng mga mata ko'y sa hinayang mula
             sa mga palayaw ni ama't aruga
             malaking palad ko't matamis na luha.
             <span class="hoverable"
-                data-word=""
+                data-word="palayaw"
                 data-audio="path/to/audio/mapanglaw.mp3"
-                data-definition-tag=""
-                data-definition-eng=""
-                data-example=""
-                data-antonyms=""
-                data-synonyms=""> </span> </p>
+                data-definition-tag="Tawag, bansag."
+                data-definition-eng="Nickname."
+                data-example="Ang kanyang palayaw ay Binoy."
+                data-antonyms="Tunay na pangalan"
+                data-synonyms="Tawag, bansag">palayaw</span>
+             </p>
     </div>
     <br>
 
     <div class="words">
         <p>102 Ngunit ang nananahang maralitang tubig
             sa mukha't dibdib ko'y laging dumidilig,
-            kay ama nga galing dapuwa't sa bangis,
-            hindi sa andukha at pagtatangkilik.
+            kay ama nga galing dapuwa't sa
             <span class="hoverable"
-                data-word=""
+                data-word="bangis"
                 data-audio="path/to/audio/mapanglaw.mp3"
-                data-definition-tag=""
-                data-definition-eng=""
-                data-example=""
-                data-antonyms=""
-                data-synonyms=""> </span> </p>
+                data-definition-tag="Galit, kasakiman."
+                data-definition-eng="Fierceness, ferocity."
+                data-example="Ang bangis ng leon ay nakakatakot."
+                data-antonyms="Kabaitan, kalmado"
+                data-synonyms="Galit, kasakiman">bangis</span>,
+            hindi sa andukha at pagtatangkilik.
+             </p>
     </div>
     <br>
 
     <div class="words">
         <p>103 Ang matatawag kong palayaw sa akin
-            ng ama ko'y itong ako'y paliluhin,
+            ng ama ko'y itong ako'y
+            <span class="hoverable"
+                data-word="paliluhin"
+                data-audio="path/to/audio/mapanglaw.mp3"
+                data-definition-tag="Lokohin, gawing tanga."
+                data-definition-eng="To deceive, to mislead."
+                data-example="Huwag kang paliluhin ng kanyang mga salita."
+                data-antonyms="Turuan, magturo"
+                data-synonyms="Lokohin, gawing tanga">paliluhin</span>,
             agawan ng sinta't panasa-nasaing
             lumubog sa dusa't buhay ko'y makitil.
-            <span class="hoverable"
-                data-word=""
-                data-audio="path/to/audio/mapanglaw.mp3"
-                data-definition-tag=""
-                data-definition-eng=""
-                data-example=""
-                data-antonyms=""
-                data-synonyms=""> </span> </p>
+            </p>
     </div>
     <br>
-
 
     <div class="words">
         <p>104 May para kong anak na napanganyaya,
@@ -116,13 +120,14 @@
             hindi nakalasap kahit munting tuwa
             sa masintang inang pagdaka'y nawala!
             <span class="hoverable"
-                data-word=""
+                data-word="layaw"
                 data-audio="path/to/audio/mapanglaw.mp3"
-                data-definition-tag=""
-                data-definition-eng=""
-                data-example=""
-                data-antonyms=""
-                data-synonyms=""> </span> </p>
+                data-definition-tag="Luho, kasiyahan."
+                data-definition-eng="Indulgence, pampering."
+                data-example="Ang layaw ng buhay ay hindi laging maganda."
+                data-antonyms="Disiplina, sakripisyo"
+                data-synonyms="Luho, kasiyahan">layaw</span>
+            </p>
     </div>
     <br>
 
@@ -132,29 +137,32 @@
             na ang wika'y Laurang aliw niring budhi,
             paalam ang abang kandong ng pighati.
             <span class="hoverable"
-                data-word=""
+                data-word="panambitan"
                 data-audio="path/to/audio/mapanglaw.mp3"
-                data-definition-tag=""
-                data-definition-eng=""
-                data-example=""
-                data-antonyms=""
-                data-synonyms=""> </span> </p>
+                data-definition-tag="Pagdadalamhati, iyak."
+                data ```blade
+                data-definition-eng="Lamentation, grieving."
+                data-example="Ang kanyang panambitan ay dinig sa buong paligid."
+                data-antonyms="Kasiyahan, kaligayahan"
+                data-synonyms="Pagdadalamhati, iyak">panambitan</span>
+          </p>
     </div>
     <br>
 
     <div class="words">
         <p>106 Lumagi ka nawa sa kaligayahan,
-            sa harap ng 'di mo esposong katipan;
+            sa harap ng 'di mo
+            <span class="hoverable"
+                data-word="esposo"
+                data-audio="path/to/audio/mapanglaw.mp3"
+                data-definition-tag="Asawa, kabiyak."
+                data-definition-eng="Husband."
+                data-example="Siya ay aking esposo sa loob ng dalawampung taon."
+                data-antonyms="Asawa, kabit"
+                data-synonyms="Asawa, kabiyak">esposo</span> katipan;
             at huwag mong datnin yaring kinaratnan,
             ng kasing nilimot at pinagliluhan.
-            <span class="hoverable"
-                data-word=""
-                data-audio="path/to/audio/mapanglaw.mp3"
-                data-definition-tag=""
-                data-definition-eng=""
-                data-example=""
-                data-antonyms=""
-                data-synonyms=""> </span> </p>
+            </p>
     </div>
     <br>
 
@@ -163,74 +171,32 @@
             mahal ka ring lubha dini sa panimdim;
             at kung mangyayari, hanggang sa malibing,
             ang mga buto ko, kita'y sisintahin.
-            <span class="hoverable"
-                data-word=""
-                data-audio="path/to/audio/mapanglaw.mp3"
-                data-definition-tag=""
-                data-definition-eng=""
-                data-example=""
-                data-antonyms=""
-                data-synonyms=""> </span> </p>
+           </p>
     </div>
     <br>
-
-    {{-- TASS LANG EDITABLE --}}
-    {{-- NO NEED NA GALAWIN. SA TAAS LANG ANG I-EDIT --}}
-    <div id="sidebar" class="sidebar hidden">
-        <button id="close-sidebar" class="close-button">&times;</button>
-
-        <div id="sidebar-content" class="overflow-auto max-h-screen p-4">
-
-            <li class="word">
-                <div class="details">
-                    <p id="word-name" style="display: inline;">__</p>
-                    <span id="word-pronunciation" style="display: inline;">_ _</span>
-                    <i class="fas fa-volume-up" id="play-audio-word" style="cursor: pointer; margin-left: 5px;"></i> <!-- Audio icon for the word -->
-                    <audio id="audio-word" src="" controls hidden></audio>
-                </div>
-            </li>
-            <div class="content">
-                <li class="meaning">
-                    <div class="details">
-                        <p>Meaning (Tagalog)</p>
-                        <span id="meaning-text">___</span>
-                    </div>
+    <hr>
+    <h3>Comments</h3>
+    <ul>
+        @if ($comments->isEmpty())
+            <p>No comments yet. Be the first to comment!</p>
+        @else
+            @foreach ($comments as $comment)
+                <li>
+                    <strong>{{ $comment->user->name }}</strong>: {{ $comment->comment }}
+                    <em>({{ $comment->created_at->diffForHumans() }})</em>
                 </li>
-                <li class="meaning-eng">
-                    <div class="details">
-                        <p>Meaning (English)</p>
-                        <span id="meaning-eng-text">___</span>
-                    </div>
-                </li>
-                <li class="example">
-                    <div class="details">
-                        <p>Example</p>
-                        <span id="example-text">___</span>
-                    </div>
-                </li>
-                <li class="synonyms">
-                    <div class="details">
-                        <p>Synonyms</p>
-                        <span id="synonyms-text">___</span>
-                    </div>
-                </li>
-                <li class="antonyms">
-                    <div class="details">
-                        <p>Antonyms</p>
-                        <span id="antonyms-text">___</span>
-                    </div>
-                </li>
-            </div>
+            @endforeach
+        @endif
+    </ul>
+    <form action="{{ route('comments.store') }}" method="POST">
+        @csrf
+        <input type="hidden" name="chapter_number" value="{{ $number }}">
+        <div class="comment-container">
+            <textarea name="comment" id="comment" rows="2" required placeholder="comment as {{ Auth::user()->name }}"></textarea>
+            <button type="submit" class="send-icon">
+                submit
+            </button>
         </div>
-    </div>
-
-    {{-- <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-        <x-nav-link :href="route('games.show', ['number'])">
-            {{ __('Game') }}
-        </x-nav-link>
-    </div> --}}
-
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
+    </form>
 
 </x-chapter-layout>

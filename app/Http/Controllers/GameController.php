@@ -7,6 +7,21 @@ use Illuminate\Support\Facades\Session;
 
 class GameController extends Controller
 {
+    public function showGame()
+    {
+        // // Validate the chapter number
+        // if ($number < 1 || $number > 30) {
+        //     return abort(404); // Return a 404 error for invalid chapters
+        // }
+
+        // // Construct the view name dynamically
+        // $viewName = 'games.game' . $number;
+
+        // // Return the view
+        // return view($viewName);
+
+        return view('games.game1');
+    }
     private $wordSets = [
         'level1' => [
             'cat' => 'A small domesticated carnivorous mammal with soft fur.',
@@ -46,9 +61,11 @@ class GameController extends Controller
         ]
     ];
 
+    private $scoreToNextLevel = 3; // Define score required to move to the next level
+
     public function index(Request $request, $level = 'level1')
     {
-        // Check if the level exists in the wordSets
+        // Check if the level exists in the wordSets array
         if (!array_key_exists($level, $this->wordSets)) {
             return redirect()->back()->withErrors(['level' => 'Invalid level selected.']);
         }
@@ -57,11 +74,17 @@ class GameController extends Controller
         if (!Session::has('words') || Session::get('level') !== $level) {
             $wordData = $this->wordSets[$level];
             $words = array_keys($wordData); // Get all word keys
-            Session::put('words', $words); // Store all words in session
+            $randomWords = array_rand($words, 5); // Randomly select 5 words
+            $selectedWords = array_map(function ($index) use ($words) {
+                return $words[$index];
+            }, $randomWords);
+
+            Session::put('words', $selectedWords); // Store the selected words in session
             Session::put('currentWordIndex', 0); // Initialize the current word index
             Session::put('level', $level);
             Session::put('guesses', []); // Reset guesses
             Session::put('attempts', 6); // Reset attempts
+            Session::put('score', 0); // Initialize score
         }
 
         // Get the current word index
@@ -72,9 +95,9 @@ class GameController extends Controller
         if ($currentWordIndex < count($words)) {
             $word = $words[$currentWordIndex]; // Get the current word
             Session::put('word', $word);
-            Session::put(' description', $this->wordSets[$level][$word]); // Store the description
+            Session::put('description', $this->wordSets[$level][$word]); // Store the description
         } else {
-            // If all words have been used, you can either reset or end the game
+            // If all words have been used, reset the game or show a message
             return redirect()->route('index', ['level' => $level])->with('message', 'All words have been used for this level. Please restart the game.');
         }
 
@@ -83,7 +106,8 @@ class GameController extends Controller
             'description' => Session::get('description'),
             'guesses' => Session::get('guesses'),
             'attempts' => Session::get('attempts'),
-            'level' => $level
+            'level' => $level,
+            'score' => Session::get('score') // Pass score to the view
         ]);
     }
 
@@ -95,6 +119,7 @@ class GameController extends Controller
         $word = Session::get('word');
         $guesses = Session::get('guesses');
         $attempts = Session::get('attempts');
+        $score = Session::get('score'); // Get the current score
 
         if (!in_array($letter, $guesses)) {
             $guesses[] = $letter;
@@ -115,16 +140,21 @@ class GameController extends Controller
             $currentWordIndex = Session::get('currentWordIndex');
             Session::put('currentWordIndex', $currentWordIndex + 1);
 
-            // Reset guesses and attempts for the next word
-            Session::put('guesses', []); // Reset guesses
-            Session::put('attempts', 6); // Reset attempts
+            // Update score
+            $score += 1; // Increment score
+            Session::put('score', $score); // Store updated score
 
-            return redirect()->route('index', ['level' => Session::get('level')])->with('message', 'Congratulations! You guessed the word: ' . $word);
+            // Check if there are more wo   rds to guess
+            if (Session::get('currentWordIndex') < count(Session::get('words'))) {
+                return redirect()->route('index', ['level' => Session::get('level')])->with('message', 'Congratulations! You guessed the word: ' . $word);
+            } else {
+                // If all words have been used, reset the game or show a message
+                return redirect()->route('index', ['level' => $this->nextLevel(Session::get('level'))])->with('message', 'All words have been used for this level. Please restart the game.');
+            }
         }
 
         return redirect()->route('index', ['level' => Session::get('level')]);
     }
-
     private function isWordGuessed($word, $guesses)
     {
         foreach (str_split($word) as $char) {
@@ -133,6 +163,19 @@ class GameController extends Controller
             }
         }
         return true;
+    }
+
+    private function nextLevel($currentLevel)
+    {
+        $levels = array_keys($this->wordSets);
+        $currentIndex = array_search($currentLevel, $levels);
+
+        // Check if there is a next level
+        if ($currentIndex !== false && $currentIndex < count($levels) - 1) {
+            return $levels[$currentIndex + 1]; // Return the next level
+        }
+
+        return $currentLevel; // If no next level, return current level
     }
 
     public function restart()

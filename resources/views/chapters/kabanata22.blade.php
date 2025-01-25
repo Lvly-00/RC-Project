@@ -3,9 +3,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <div class="shrink-0 flex items-center">
         <a href="{{ route('chapters') }}">Back</a>
-    </div>
+    </div>>
     {{-- FROM HERE MAG-EEDIT --}}
     {{-- JUST COPY & PASTE THE WHOLE CODE FOR TEMPLATE. --}}
     {{-- NO NEED NA GALAWIN ANG AUDIO FIILE --}}
@@ -22,201 +23,202 @@
                 data-synonyms="sobra, labis">anaki</span>
     --}}
 
-    <div class="words">
-        </p>
-            275   Siyang
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">pamimitak
-            </span> at kusang nagsabog
-            ng ningning ang talang kaagaw ni Benus —
-            anaki ay bagong umahon sa bubog,
-            buhok ay naglugay sa perlas na batok.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            276   Tuwang pangalawa kung hindi man langit
-            ang itinatapon ng mahinhing titig;
-            o, ang luwalhating buko ng ninibig,
-            pain ni Kupidong walang makarakip.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            277   Liwanag ng mukha'y walang pinag-ibhan
-            kay Pebo kung anyong bagong sumisilang;
-            katawang butihin ay
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">timbang na timbang
-            </span>
-            at mistulang ayon sa hinhin ng asal.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            278   Sa kaligayaha'y ang nakakaayos —
-            bulaklak na bagong hinawi ng hamog;
-            anupa't sinumang palaring manood,
-            patay o himala kung hindi
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">umirog
-            </span>.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            279   Ito ay si Laurang ikinasisira
-            ng pag-iisip ko tuwing magunita,
-            at dahil nang tanang himutok at luha —
-            itinotono ko sa pagsasalita.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            280   Anak ni Linceong haring napahamak
-            at kinabukasan na'ng aking pagliyag;
-            bakit
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">itinulot
-            </span>, Langit na mataas
-            na mapanood ko kung 'di ako dapat?
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            281   O Haring Linceo, kundi mo pinilit
-            na sa salitaan nati'y makipanig,
-            ng buhay ko disi'y hindi nagkasakit
-            ngayong pagliluhan ng anak mong ibig!
-        </p>
-    </div>
-    <br>
 
     <div class="words">
-        <p>
-            282   Hindi katoto ko't si Laura'y 'di taksil,
-            aywan ko kung ano't lumimot sa akin!
-            Ang palad ko'y siyang
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">alipusta
-            </span>'t linsil,
-            'di lang magtamo ng tuwa sa giliw.
-        </p>
-    </div>
-    <br>
+    </p>
+        275   Siyang
+        <span class="hoverable"
+        data-word="pamimitak"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="pagbubukang-liwayway o pagsisimula ng madaling-araw"
+        data-definition-eng="dawn or break of day"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="takipsilim, dapithapon"
+        data-synonyms="bukang-liwayway, madaling-araw">pamimitak
+        </span> at kusang nagsabog
+        ng ningning ang talang kaagaw ni Benus —
+        anaki ay bagong umahon sa bubog,
+        buhok ay naglugay sa perlas na batok.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        276   Tuwang pangalawa kung hindi man langit
+        ang itinatapon ng mahinhing titig;
+        o, ang luwalhating buko ng ninibig,
+        pain ni Kupidong walang makarakip.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        277   Liwanag ng mukha'y walang pinag-ibhan
+        kay Pebo kung anyong bagong sumisilang;
+        katawang butihin ay
+        <span class="hoverable"
+        data-word="timbang na timbang"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="sakto o angkop ang proporsyon"
+        data-definition-eng="perfectly proportioned"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="hindi akma, labis"
+        data-synonyms="balanse, akma">timbang na timbang
+        </span>
+        at mistulang ayon sa hinhin ng asal.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        278   Sa kaligayaha'y ang nakakaayos —
+        bulaklak na bagong hinawi ng hamog;
+        anupa't sinumang palaring manood,
+        patay o himala kung hindi
+        <span class="hoverable"
+        data-word="umirog"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="umibig o mahulog ang loob"
+        data-definition-eng="to fall in love or feel affection"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="hate, detest"
+        data-synonyms="magmahal, umibig">umirog
+        </span>.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        279   Ito ay si Laurang ikinasisira
+        ng pag-iisip ko tuwing magunita,
+        at dahil nang tanang himutok at luha —
+        itinotono ko sa pagsasalita.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        280   Anak ni Linceong haring napahamak
+        at kinabukasan na'ng aking pagliyag;
+        bakit
+        <span class="hoverable"
+        data-word="itinulot"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="pinahintulutan o tinanggap"
+        data-definition-eng="allowed or permitted"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="ipinagbawal, tinutulan"
+        data-synonyms="pinayagan, tinanggap">itinulot
+        </span>, Langit na mataas
+        na mapanood ko kung 'di ako dapat?
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        281   O Haring Linceo, kundi mo pinilit
+        na sa salitaan nati'y makipanig,
+        ng buhay ko disi'y hindi nagkasakit
+        ngayong pagliluhan ng anak mong ibig!
+    </p>
+</div>
+<br>
 
-    <div class="words">
-        <p>
-            283   Makakapit kaya ang gawang
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">magsukab
-            </span>
-            sa pinakayaman ng langit sa dilag?
-            Kagandaha'y bakit 'di makapagkalag
-            ng pagkakapatid sa maglilong lakad?
-        </p>
-    </div>
-    <br>
+<div class="words">
+    <p>
+        282   Hindi katoto ko't si Laura'y 'di taksil,
+        aywan ko kung ano't lumimot sa akin!
+        Ang palad ko'y siyang
+        <span class="hoverable"
+        data-word="alipusta"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="pagmamaliit o pag-aalipusta"
+        data-definition-eng="insult or disdain"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="paggalang, respeto"
+        data-synonyms="hamak, kutya">alipusta
+        </span>'t linsil,
+        'di lang magtamo ng tuwa sa giliw.
+    </p>
+</div>
+<br>
 
-    <div class="words">
-        <p>
-            284   Kung nalalagay ka'y, ang
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">mamatuwirin
-            </span>,
-            sa laot ng madlang sukat ipagtaksil,
-            dili ang dangal mo'ng dapat na lingapin,
-            mahigit sa walang kagandaha't ningning?
-        </p>
-    </div>
-    <br>
+<div class="words">
+    <p>
+        283   Makakapit kaya ang gawang
+        <span class="hoverable"
+        data-word="magsukab"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="magtaksil o gumawa ng masama"
+        data-definition-eng="to betray or commit treachery"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="magtapat, magpakatapat"
+        data-synonyms="magtaksil, lumigaw">magsukab
+        </span>
+        sa pinakayaman ng langit sa dilag?
+        Kagandaha'y bakit 'di makapagkalag
+        ng pagkakapatid sa maglilong lakad?
+    </p>
+</div>
+<br>
 
-    <div class="words">
-        <p>
-            285   Ito ay hamak pa bagang
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">sumansala
-            </span>
-            ng karupukan mo at gawing masama?
-            Kung ano ang taas ng pagkadakila,
-            siya ring lagapak naman kung marapa!
-        </p>
-    </div>
-    <br>
+<div class="words">
+    <p>
+        284   Kung nalalagay ka'y, ang
+        <span class="hoverable"
+        data-word="mamatuwirin"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="mangatwiran o magdahilan"
+        data-definition-eng=" to reason out or justify"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="manahimik, magpakumbaba"
+        data-synonyms="mangatwiran, magbigay katuwiran">mamatuwirin
+        </span>,
+        sa laot ng madlang sukat ipagtaksil,
+        dili ang dangal mo'ng dapat na lingapin,
+        mahigit sa walang kagandaha't ningning?
+    </p>
+</div>
+<br>
 
-    <div class="words">
-        <p>
-            286   O bunying gererong naawa sa akin,
-            pagsilang na niyong nabagong bituin,
-            sa pagkakita ko'y sabay ang paggiliw,
-            inagaw ang pusong sa ina ko'y hayin!
-        </p>
-    </div>
-    <br>
+<div class="words">
+    <p>
+        285   Ito ay hamak pa bagang
+        <span class="hoverable"
+        data-word="sumansala"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="humadlang o pumigil"
+        data-definition-eng="to prevent or stop"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="tumulong, magpaubaya"
+        data-synonyms="humadlang, pumigil">sumansala
+        </span>
+        ng karupukan mo at gawing masama?
+        Kung ano ang taas ng pagkadakila,
+        siya ring lagapak naman kung marapa!
+    </p>
+</div>
+<br>
 
-    <div class="words">
-        <p>
-            287   Anupa't ang luhang sa mata'y nanagos
-            ng pagkaulila sa ina kong irog,
-            natungkol sa sinta't puso'y nangilabot,
-            baka 'di marapat sa gayong alindog.
-        </p>
-    </div>
-    <br>
+<div class="words">
+    <p>
+        286   O bunying gererong naawa sa akin,
+        pagsilang na niyong nabagong bituin,
+        sa pagkakita ko'y sabay ang paggiliw,
+        inagaw ang pusong sa ina ko'y hayin!
+    </p>
+</div>
+<br>
+
+<div class="words">
+    <p>
+        287   Anupa't ang luhang sa mata'y nanagos
+        ng pagkaulila sa ina kong irog,
+        natungkol sa sinta't puso'y nangilabot,
+        baka 'di marapat sa gayong alindog.
+    </p>
+</div>
+<br>
 
 
 

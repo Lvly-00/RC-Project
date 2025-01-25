@@ -3,9 +3,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <div class="shrink-0 flex items-center">
         <a href="{{ route('chapters') }}">Back</a>
-    </div>
+    </div>>
     {{-- FROM HERE MAG-EEDIT --}}
     {{-- JUST COPY & PASTE THE WHOLE CODE FOR TEMPLATE. --}}
     {{-- NO NEED NA GALAWIN ANG AUDIO FIILE --}}
@@ -22,123 +23,127 @@
                 data-synonyms="sobra, labis">anaki</span>
     --}}
 
-    <div class="words">
-        </p>
-            288   Hindi ko makita ang patas na wika
-            sa kaguluhan ko't
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">pagkawalandiwa
-            </span>,
-            nang makiumpok na'y ang aking salita,
-            anhin mang tuwirin ay nagkakalisya.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            289   Nang malutas yaong pagsasalitaan
-            ay wala na akong kamaharlikaan;
-            kaluluwa'y gulo't puso'y
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">nadadarang
-            </span>
-            sa ningas ng sintang bago kong natikman.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            290   Tatlong araw noong
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">piniging
-            </span> ng hari
-            sa palasyo real na sa yama'y bunyi
-            ay 'di nakausap ang punong pighati
-            at inaasahang iluluwalhati.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            291   Dito ko natikman ang lalong hinagpis,
-            higit sa dalitang naunang tiniis;
-            at hinulaan ko ang lahat ng sakit
-            kung sa kahirapan mula sa pag-ibig.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            292   Salamat at noong sa kinabukasan,
-            hukbo ko'y lalakad sa Krotonang Bayan,
-            sandaling pinalad na nakapanayam
-            ang prinsesang nihag niring katauhan.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            293   Ipinahahayag ko nang wikang mairog,
-            nang buntung-hininga, luha at himutok,
-            ang matinding sintang ikinalulunod
-            magpahangga ngayon ng buhay kong kapos.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            294   Ang pusong matibay ng himalang dikit,
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">nahambal
-            </span> sa aking malumbay na hibik;
-            dangan ang kanyang katutubong bait
-            ay humadlang, disin sinta koy' nabihis.
-        </p>
-    </div>
-    <br>
+
+
 
     <div class="words">
-        <p>
-            295   Nguni'y kung ang oo'y 'di man binitiwan,
-            naliwanagan din sintang nadirimlan;
-            at sa pagpanaw ko ay
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">pinabaunan
-            </span>
-            ng may hiyang perlas na sa mata'y nukal.
-        </p>
-    </div>
-    <br>
+    </p>
+        288   Hindi ko makita ang patas na wika
+        sa kaguluhan ko't
+        <span class="hoverable"
+        data-word="pagkawalandiwa"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="pagkawala ng direksyon o layunin"
+        data-definition-eng="loss of direction or purpose"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="kaayusan, pagkakapare-pareho"
+        data-synonyms="kalituhan, pagkalito">pagkawalandiwa
+        </span>,
+        nang makiumpok na'y ang aking salita,
+        anhin mang tuwirin ay nagkakalisya.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        289   Nang malutas yaong pagsasalitaan
+        ay wala na akong kamaharlikaan;
+        kaluluwa'y gulo't puso'y
+        <span class="hoverable"
+        data-word="nadadarang"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="nasusunog o tinatablan ng init"
+        data-definition-eng="burning or being heated"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="malamig, hindi tinatablan ng init"
+        data-synonyms="nasusunog, napapalitan">nadadarang
+        </span>
+        sa ningas ng sintang bago kong natikman.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        290   Tatlong araw noong
+        <span class="hoverable"
+        data-word="piniging"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="pagtitipon o salo-salo"
+        data-definition-eng="gathering or feast"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="pag-iisa, pagkakalayo"
+        data-synonyms="salo-salo, kasiyahan">piniging
+        </span> ng hari
+        sa palasyo real na sa yama'y bunyi
+        ay 'di nakausap ang punong pighati
+        at inaasahang iluluwalhati.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        291   Dito ko natikman ang lalong hinagpis,
+        higit sa dalitang naunang tiniis;
+        at hinulaan ko ang lahat ng sakit
+        kung sa kahirapan mula sa pag-ibig.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        292   Salamat at noong sa kinabukasan,
+        hukbo ko'y lalakad sa Krotonang Bayan,
+        sandaling pinalad na nakapanayam
+        ang prinsesang nihag niring katauhan.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        293   Ipinahahayag ko nang wikang mairog,
+        nang buntung-hininga, luha at himutok,
+        ang matinding sintang ikinalulunod
+        magpahangga ngayon ng buhay kong kapos.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        294   Ang pusong matibay ng himalang dikit,
+        <span class="hoverable"
+        data-word="sintang ikinalulunod"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="pagmamahal na labis ang bigat o pasakit"
+        data-definition-eng="love that overwhelms or drowns"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="malamig na pagmamahal, walang pagmamahal"
+        data-synonyms="pag-ibig na naglalaman ng hirap, labis na pagmamahals">nahambal
+        </span> sa aking malumbay na hibik;
+        dangan ang kanyang katutubong bait
+        ay humadlang, disin sinta koy' nabihis.
+    </p>
+</div>
+<br>
+
+<div class="words">
+    <p>
+        295   Nguni'y kung ang oo'y 'di man binitiwan,
+        naliwanagan din sintang nadirimlan;
+        at sa pagpanaw ko ay
+        <span class="hoverable"
+        data-word="pinabaunan"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="ipinagkaloob o iniwan bilang alay"
+        data-definition-eng=" left as a gift or offering"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="tinanggihan, iniiwasan"
+        data-synonyms="iniwan, ipinaabot">pinabaunan
+        </span>
+        ng may hiyang perlas na sa mata'y nukal.
+    </p>
+</div>
+<br>
+
 
 
     {{-- TASS LANG EDITABLE --}}
@@ -196,8 +201,8 @@
             {{ __('Game') }}
         </a>
     </div>
+
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
-
 
 </x-chapter-layout>

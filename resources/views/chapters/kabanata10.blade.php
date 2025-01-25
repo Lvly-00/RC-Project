@@ -230,7 +230,28 @@
         </x-nav-link>
     </div> --}}
 
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
-
+    <hr>
+        <h3>Comments</h3>
+        <ul>
+            @if ($comments->isEmpty())
+                <p>No comments yet. Be the first to comment!</p>
+            @else
+                @foreach ($comments as $comment)
+                    <li>
+                        <strong>{{ $comment->user->name }}</strong>: {{ $comment->comment }}
+                        <em>({{ $comment->created_at->diffForHumans() }})</em>
+                    </li>
+                @endforeach
+            @endif
+        </ul>
+        <form action="{{ route('comments.store') }}" method="POST">
+            @csrf
+            <input type="hidden" name="chapter_number" value="{{ $number }}">
+            <div class="comment-container">
+                <textarea name="comment" id="comment" rows="2" required placeholder="comment as {{ Auth::user()->name }}"></textarea>
+                <button type="submit" class="send-icon">
+                    submit
+                </button>
+            </div>
+        </form>
 </x-chapter-layout>

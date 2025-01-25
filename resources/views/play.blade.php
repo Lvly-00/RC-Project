@@ -1,30 +1,47 @@
-
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
     <title>Florante at Laura</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <x-navigation-bar/>
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> --}}
+    @vite(['resources\css\app.css'])
 
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <a href="{{route('chapters')}}" >
-                        Chapters
-                    </a>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <a href="{{route('characters')}}" >
-                        Characters
-                </a>
-                </div>
-            </div>
+</head>
+
+<body class="play-body ">
+    <x-navigation-bar />
+    <br>
+    <br>
+    <br>
+    <!-- Back Button -->
+    <div class="back-button">
+        <a href="{{ route('dashboard') }}">
+            <button>Back</button>
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <div>
+
+        <div>
+            <h1>Random Tagalog Word: {{ $word }}</h1>
+            <p>Meaning: {{ $meaning }}</p>
+        </div>
+
+        <!-- Chapters Link -->
+        <div>
+            <a href="{{ route('chapters') }}">
+                MGA KABANATA
+            </a>
+        </div>
+        <div>
+
+            <!-- Characters Link -->
+            <a href="{{ route('characters') }}">
+                MGA TAUHAN
+            </a>
         </div>
     </div>
 </body>
+
 </html>
-
-

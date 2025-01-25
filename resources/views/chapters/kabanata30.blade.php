@@ -3,9 +3,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <div class="shrink-0 flex items-center">
         <a href="{{ route('chapters') }}">Back</a>
-    </div>
+    </div>>
     {{-- FROM HERE MAG-EEDIT --}}
     {{-- JUST COPY & PASTE THE WHOLE CODE FOR TEMPLATE. --}}
     {{-- NO NEED NA GALAWIN ANG AUDIO FIILE --}}
@@ -22,97 +23,98 @@
                 data-synonyms="sobra, labis">anaki</span>
     --}}
 
-    <div class="words">
-        </p>
-            393   Di pa napapatid itong pangungusap,
-            si Menandro'y siyang pagdating sa gubat;
-            dala'y
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">ehersito
-            </span>'t si Adolfo'y hanap,
-            nakita'y katoto ... laking tuwa't galak!
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            394   Yaong ehersitong mula sa Etolya,
-            ang unang nawika sa gayong ligaya:
-            "Biba si Floranteng Hari sa Albanya!
-            Mabuhay, mabuhay ang Prinsesa Laura!"
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            395   Dinala sa reynong ipinagdiriwang
-            sampu ni Aladi't ni Fleridang hirang,
-            kapuwa tumanggap na mangabinyagan;
-            magkakasing sinta'y naraos na kasal.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            396   Namatay ang
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">bunying
-            </span> Sultan Ali-Adab,
-            nuwi si Aladin sa Persiyang Siyudad;
-            ang Duke Florante sa trono'y naakyat,
-            sa piling ni Laurang minumutyang liyag.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            397   Sa pamamahala nitong bagong hari,
-            sa kapayapaan ang reyno'y nauwi;
-            rito nakabangon ang
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">nalulugami
-            </span>
-            at napasatuwa ang nagpipighati.
-        </p>
-    </div>
-    <div class="words">
-        <p>
-            398   Kaya nga't nagtaas ang kamay sa langit,
-            sa pasasalamat ng bayang tangkilik;
-            ang hari't ang reyna'y walang iniisip
-            kundi ang magsabog ng awa sa kabig.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            399   Nagsasama silang lubhang mahinusay
-            hanggang sa nasapit ang payapang bayan;
-            tigil aking Musa't kusa kung lumagay
-            sa yapak ni Selya't dalhin yaring ay, ay!
 
-            (Wakas ng Awit)
-        </p>
-    </div>
 
+    <div class="words">
+    </p>
+        393   Di pa napapatid itong pangungusap,
+        si Menandro'y siyang pagdating sa gubat;
+        dala'y
+        <span class="hoverable"
+        data-word="Ehersito"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="hukbo, grupo ng mga sundalo"
+        data-definition-eng="army, military force"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="kapayapaan, kalmado"
+        data-synonyms="hukbo, sundalo">ehersito
+        </span>'t si Adolfo'y hanap,
+        nakita'y katoto ... laking tuwa't galak!
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        394   Yaong ehersitong mula sa Etolya,
+        ang unang nawika sa gayong ligaya:
+        "Biba si Floranteng Hari sa Albanya!
+        Mabuhay, mabuhay ang Prinsesa Laura!"
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        395   Dinala sa reynong ipinagdiriwang
+        sampu ni Aladi't ni Fleridang hirang,
+        kapuwa tumanggap na mangabinyagan;
+        magkakasing sinta'y naraos na kasal.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        396   Namatay ang
+        <span class="hoverable"
+        data-word="Bunying"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="kagalang-galang, magaling"
+        data-definition-eng="honorable, distinguished"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="marumi, hindi magalang"
+        data-synonyms="kagalang-galang, magaling">bunying
+        </span> Sultan Ali-Adab,
+        nuwi si Aladin sa Persiyang Siyudad;
+        ang Duke Florante sa trono'y naakyat,
+        sa piling ni Laurang minumutyang liyag.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        397   Sa pamamahala nitong bagong hari,
+        sa kapayapaan ang reyno'y nauwi;
+        rito nakabangon ang
+        <span class="hoverable"
+        data-word="Nalulugami"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="nalulugmok, nahihirapan"
+        data-definition-eng="in distress, suffering"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="buo, matatag"
+        data-synonyms="sugatan, malupit">nalulugami
+        </span>
+        at napasatuwa ang nagpipighati.
+    </p>
+</div>
+<div class="words">
+    <p>
+        398   Kaya nga't nagtaas ang kamay sa langit,
+        sa pasasalamat ng bayang tangkilik;
+        ang hari't ang reyna'y walang iniisip
+        kundi ang magsabog ng awa sa kabig.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        399   Nagsasama silang lubhang mahinusay
+        hanggang sa nasapit ang payapang bayan;
+        tigil aking Musa't kusa kung lumagay
+        sa yapak ni Selya't dalhin yaring ay, ay!
+
+        (Wakas ng Awit)
+    </p>
+</div>
 
 
 

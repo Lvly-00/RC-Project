@@ -3,9 +3,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <div class="shrink-0 flex items-center">
         <a href="{{ route('chapters') }}">Back</a>
-    </div>
+    </div>>
     {{-- FROM HERE MAG-EEDIT --}}
     {{-- JUST COPY & PASTE THE WHOLE CODE FOR TEMPLATE. --}}
     {{-- NO NEED NA GALAWIN ANG AUDIO FIILE --}}
@@ -22,268 +23,271 @@
                 data-synonyms="sobra, labis">anaki</span>
     --}}
 
-    <div class="words">
-        </p>
-            324   Nang aking matantong nasa bilangguan
-            ang bunying monarka't ang ama kong hirang;
-            nag-utos sa hukbo't aming sinalakay
-            hanggang 'di nabawi ang Albanyang bayan.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            325   Pagpasok na namin sa loob ng reyno,
-            bilanggua'y siyang una kong tinungo;
-            hinango ang hari't ang dukeng ama ko
-            sa kaginooha'y isa si Adolfo.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            326   Labis ang ligayang kinamtan ng hari
-            at ng natimawang kamahalang pili;
-            si Adolfo lamang ang nagdalamhati,
-            sa kapurihan kong tinamo ang sanhi.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            327   <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">Pangimbulo
-            </span> niya'y lalo nang nag-alab
-            nang ako'y tawaging Tanggulan ng S'yudad,
-            at ipinagdiwang ng haring mataas
-            sa palasyo real nang lubos na galak.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            328   Saka nahalatang ako'y minamahal
-            ng pinag-uusig niyang
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">kariktan
-            </span>;
-            ang Konde Adolfo'y nagpapakamatay —
-            dahil sa korona — kay Laura'y makasal.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            329   Lumago ang binhing nagmula sa Atenas
-            ipinunlang nasang ako'y ipahamak;
-            kay Adolfo'y walang bagay na masaklap,
-            para ng buhay kong hindi nauutas.
-        </p>
-    </div>
-    <br>
-    <div class="words">
-        <p>
-            330   'di nag-ilang buwan ang sa reynong tuwa
-            at pasasalamat sa pagkatimawa,
-            dumating ang isang hukbong maninira
-            ng tagaTurkiyang masakim na lubha.
-        </p>
-    </div>
-    <br>
 
     <div class="words">
-        <p>
-            331   Dito ang panganib at pag-iiyakan
-            ng bagong nahugot sa dalitang bayan,
-            lalo na si Laura't ang kapangambahan
-            ang ako ay sam-ing palad sa patayan.
-        </p>
-    </div>
-    <br>
+    </p>
+        324   Nang aking matantong nasa bilangguan
+        ang bunying monarka't ang ama kong hirang;
+        nag-utos sa hukbo't aming sinalakay
+        hanggang 'di nabawi ang Albanyang bayan.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        325   Pagpasok na namin sa loob ng reyno,
+        bilanggua'y siyang una kong tinungo;
+        hinango ang hari't ang dukeng ama ko
+        sa kaginooha'y isa si Adolfo.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        326   Labis ang ligayang kinamtan ng hari
+        at ng natimawang kamahalang pili;
+        si Adolfo lamang ang nagdalamhati,
+        sa kapurihan kong tinamo ang sanhi.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        327   <span class="hoverable"
+        data-word="pangimbulo"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="inggit o pagkainggit sa tagumpay ng iba"
+        data-definition-eng="jealousy or envy of others' success"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="katuwaan, paggalang"
+        data-synonyms="inggit, selos">Pangimbulo
+        </span> niya'y lalo nang nag-alab
+        nang ako'y tawaging Tanggulan ng S'yudad,
+        at ipinagdiwang ng haring mataas
+        sa palasyo real nang lubos na galak.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        328   Saka nahalatang ako'y minamahal
+        ng pinag-uusig niyang
+        <span class="hoverable"
+        data-word="kariktan"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="kagandahan o pagkamapansin-pansin"
+        data-definition-eng="beauty or attractiveness"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="pangit, hindi kaakit-akit"
+        data-synonyms="kagandahan, alindog">kariktan
+        </span>;
+        ang Konde Adolfo'y nagpapakamatay —
+        dahil sa korona — kay Laura'y makasal.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        329   Lumago ang binhing nagmula sa Atenas
+        ipinunlang nasang ako'y ipahamak;
+        kay Adolfo'y walang bagay na masaklap,
+        para ng buhay kong hindi nauutas.
+    </p>
+</div>
+<br>
+<div class="words">
+    <p>
+        330   'di nag-ilang buwan ang sa reynong tuwa
+        at pasasalamat sa pagkatimawa,
+        dumating ang isang hukbong maninira
+        ng tagaTurkiyang masakim na lubha.
+    </p>
+</div>
+<br>
 
-    <div class="words">
-        <p>
-            332   Sapagkat heneral akong inatas
-            ng hari sa hukbong sa Moro'y lalabas;
-            nag-uli ang loob ng bayang nasindak
-            puso ni Adolfo'y parang nakamandag.
-        </p>
-    </div>
-    <br>
+<div class="words">
+    <p>
+        331   Dito ang panganib at pag-iiyakan
+        ng bagong nahugot sa dalitang bayan,
+        lalo na si Laura't ang kapangambahan
+        ang ako ay sam-ing palad sa patayan.
+    </p>
+</div>
+<br>
 
-    <div class="words">
-        <p>
-            333   Niloob ng Langit na aking
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">masupil
-            </span>
-            ang hukbo ng bantog na si Miramolin;
-            siyang mulang araw na ikinalagim
-            sa Reynong Albanya ng Turkong masakim.
-        </p>
-    </div>
-    <br>
+<div class="words">
+    <p>
+        332   Sapagkat heneral akong inatas
+        ng hari sa hukbong sa Moro'y lalabas;
+        nag-uli ang loob ng bayang nasindak
+        puso ni Adolfo'y parang nakamandag.
+    </p>
+</div>
+<br>
 
-    <div class="words">
-        <p>
-            334   Bukod dito'y
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">madlang digma
-            </span> ng kaaway
-            ang sunud-sunod kong pinagtagumpayan;
-            anupa't sa aking kalis na matapang,
-            labimpitong hari ang nangagsigalang.
-        </p>
-    </div>
-    <br>
+<div class="words">
+    <p>
+        333   Niloob ng Langit na aking
+        <span class="hoverable"
+        data-word="kaliluhan"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="kasiraan o kalokohan"
+        data-definition-eng="foolishness or wickedness"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="kabutihan, kaalaman"
+        data-synonyms="kalokohan, kasiraan">masupil
+        </span>
+        ang hukbo ng bantog na si Miramolin;
+        siyang mulang araw na ikinalagim
+        sa Reynong Albanya ng Turkong masakim.
+    </p>
+</div>
+<br>
 
-    <div class="words">
-        <p>
-            335   Isang araw akong bagong nagbiktorya
-            sa Etolyang S'yudad na kusang binaka,
-            tumanggap ng sulat ng aking monarka,
-            mahigpit na biling umuwi sa Albanya.
-        </p>
-    </div>
-    <br>
+<div class="words">
+    <p>
+        334   Bukod dito'y
+        <span class="hoverable"
+        data-word="masupil"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="mapigilan o mapatahimik"
+        data-definition-eng="to conquer or suppress"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="palayain, bitawan"
+        data-synonyms="mapatahimik, masakop">madlang digma
+        </span> ng kaaway
+        ang sunud-sunod kong pinagtagumpayan;
+        anupa't sa aking kalis na matapang,
+        labimpitong hari ang nangagsigalang.
+    </p>
+</div>
+<br>
 
-    <div class="words">
-        <p>
-            336   At ang paninihala sa dala kong hukbo,
-            ipagkatiwalang iwan kay Menandro;
-            noon di'y tumulak sa Etolyang Reyno,
-            pagsunod sa hari't Albanya'y tinungo.
-        </p>
-    </div>
-    <br>
+<div class="words">
+    <p>
+        335   Isang araw akong bagong nagbiktorya
+        sa Etolyang S'yudad na kusang binaka,
+        tumanggap ng sulat ng aking monarka,
+        mahigpit na biling umuwi sa Albanya.
+    </p>
+</div>
+<br>
 
-    <div class="words">
-        <p>
-            337   Nang dumating ako'y gabing kadiliman,
-            pumasok sa reynong walang agam-agam;
-            pagdaka'y nakubkob lLaking
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">kaliluhan
-            </span>
-            ng may tatlumpung libong sandatahan.
-        </p>
-    </div>
-    <br>
+<div class="words">
+    <p>
+        336   At ang paninihala sa dala kong hukbo,
+        ipagkatiwalang iwan kay Menandro;
+        noon di'y tumulak sa Etolyang Reyno,
+        pagsunod sa hari't Albanya'y tinungo.
+    </p>
+</div>
+<br>
 
-    <div class="words">
-        <p>
-            338   'di binigyang-daang akin pang mabunot
-            ang sakbat na kalis at makapamook;
-            buong katawan ko'y <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">binidbid
-            </span> ng gapos,
-            piniit sa karsel na katakut-takot.
-        </p>
-    </div>
-    <br>
+<div class="words">
+    <p>
+        337   Nang dumating ako'y gabing kadiliman,
+        pumasok sa reynong walang agam-agam;
+        pagdaka'y nakubkob lLaking
+        <span class="hoverable"
+        data-word="madlang digma"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="labanan o digmaan na kinasasangkutan ng marami"
+        data-definition-eng="a war or battle involving many people"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="kapayapaan, kasunduan"
+        data-synonyms="digmaan, labanan">kaliluhan
+        </span>
+        ng may tatlumpung libong sandatahan.
+    </p>
+</div>
+<br>
 
-    <div class="words">
-        <p>
-            339   Sabihin ang aking pamamahangha't lumbay,
-            lalo nang matantong monarka'y pinatay
-            ng Konde Adolfo't kusang idinamay
-            ang ama kong irog na mapagpalayaw.
-        </p>
-    </div>
-    <br>
+<div class="words">
+    <p>
+        338   'di binigyang-daang akin pang mabunot
+        ang sakbat na kalis at makapamook;
+        buong katawan ko'y <span class="hoverable"
+        data-word="binidbid"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="pinilit o ipinasok sa isang lugar"
+        data-definition-eng="forced or pushed into a place"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="pinaalis, pinakawalan"
+        data-synonyms="pinilit, ipinasok">binidbid
+        </span> ng gapos,
+        piniit sa karsel na katakut-takot.
+    </p>
+</div>
+<br>
 
-    <div class="words">
-        <p>
-            340   Ang nasang yumama't haring mapatanyag
-            at uhaw sa aking dugo ang yumakag
-            sa puso ng Konde sa gawang magsukab ...
-            O, <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">napakarawal
-            </span> na Albanyang S'yudad!
-        </p>
-    </div>
-    <br>
+<div class="words">
+    <p>
+        339   Sabihin ang aking pamamahangha't lumbay,
+        lalo nang matantong monarka'y pinatay
+        ng Konde Adolfo't kusang idinamay
+        ang ama kong irog na mapagpalayaw.
+    </p>
+</div>
+<br>
 
-    <div class="words">
-        <p>
-            341   Mahigpit kang aba sa mapagpunuan
-            ng hangal na puno at masamang asal,
-            sapagkat ang haring may hangad sa yaman
-            ay mariing hampas ng Langit sa bayan.
-        </p>
-    </div>
-    <br>
+<div class="words">
+    <p>
+        340   Ang nasang yumama't haring mapatanyag
+        at uhaw sa aking dugo ang yumakag
+        sa puso ng Konde sa gawang magsukab ...
+        O, <span class="hoverable"
+        data-word="napakarawal"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="labis o matinding kalungkutan"
+        data-definition-eng="extreme sorrow or devastation"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="kaligayahan, kasiyahan"
+        data-synonyms="matinding kalungkutan, paghihirap">napakarawal
+        </span> na Albanyang S'yudad!
+    </p>
+</div>
+<br>
 
-    <div class="words">
-        <p>
-            342   Ako'y lalong aba't dinaya ng ibig,
-            may kahirapan pang para ng marinig
-            na ang prinsesa ko'y nangakong mahigpit
-            pakasal sa Konde Adolfong balawis?
-        </p>
-    </div>
-    <br>
+<div class="words">
+    <p>
+        341   Mahigpit kang aba sa mapagpunuan
+        ng hangal na puno at masamang asal,
+        sapagkat ang haring may hangad sa yaman
+        ay mariing hampas ng Langit sa bayan.
+    </p>
+</div>
+<br>
 
-    <div class="words">
-        <p>
-            343   Ito ang nagkalat ng
-            <span class="hoverable"
-            data-word="Lubhang"
-            data-audio="path/to/audio/mapanglaw.mp3"
-            data-definition-tag="Labis o sobra."
-            data-definition-eng="Excessive or too much."
-            data-example="Lubhang mahirap ang sitwasyon."
-            data-antonyms="kaunti, konti"
-            data-synonyms="sobra, labis">lasong masidhi
-            </span>
-            sa ugat ng kaing pusong mapighati
-            at pinagnasaang buhay ko'y madali
-            sa pinanggalingang wala'y masauli.
-        </p>
-    </div>
-    <br>
+<div class="words">
+    <p>
+        342   Ako'y lalong aba't dinaya ng ibig,
+        may kahirapan pang para ng marinig
+        na ang prinsesa ko'y nangakong mahigpit
+        pakasal sa Konde Adolfong balawis?
+    </p>
+</div>
+<br>
+
+<div class="words">
+    <p>
+        343   Ito ang nagkalat ng
+        <span class="hoverable"
+        data-word="lasong masidhi"
+        data-audio="path/to/audio/mapanglaw.mp3"
+        data-definition-tag="matinding pagnanasa o poot"
+        data-definition-eng="intense desire or venom"
+        data-example="Lubhang mahirap ang sitwasyon."
+        data-antonyms="pag-ibig, pagpapatawad"
+        data-synonyms="galit, poot">lasong masidhi
+        </span>
+        sa ugat ng kaing pusong mapighati
+        at pinagnasaang buhay ko'y madali
+        sa pinanggalingang wala'y masauli.
+    </p>
+</div>
+<br>
+
+
 
 
     {{-- TASS LANG EDITABLE --}}
