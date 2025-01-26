@@ -9,7 +9,7 @@
 
 </head>
 
-<body>
+<body style="background: url('{{ asset('FrontendAssets/bg.png') }}') no-repeat center center fixed; background-size: cover;">
     <div>
 
         <div>

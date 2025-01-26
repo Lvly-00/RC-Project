@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body style="background: url('{{ asset('FrontendAssets/homepage.png') }}') no-repeat center center fixed; background-size: cover;">
 
     <div class="container">
         <h1>Leaderboard</h1>

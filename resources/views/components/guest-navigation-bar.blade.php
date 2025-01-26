@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         nav {
-            background-color: #85785680;
+            /* background-color: #85785680;*/
         }
 
         a{

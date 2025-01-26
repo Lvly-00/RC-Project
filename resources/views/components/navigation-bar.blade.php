@@ -10,7 +10,7 @@
 
     <style>
         nav {
-            background-color: #887f6780;
+            /*background-color: #887f6780;*/
         }
 
     </style>

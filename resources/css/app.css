@@ -2,3 +2,245 @@
 @tailwind components;
 @tailwind utilities;
 @plugin "flowbite/plugin";
+
+
+@font-face {
+    font-family: 'IMFellDWPica';
+    src: url('path-to-fonts/IMFellDWPica-Regular.ttf') format('truetype');
+  }
+  
+body {
+    font-family: 'Georgia', serif;
+}
+  
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.4em;
+    background-color: #F5EFE8;
+    border-radius: 25px;
+    transition: .4s ease-in-out;
+    max-width: 400px; 
+    margin-left: auto;
+    box-shadow: 10px 0 15px #24201b;
+  }
+  
+  .form:hover {
+    transform: scale(1.05);
+    border: 1px solid black;
+  }
+  
+  #heading {
+    text-align: center;
+    margin: 2em;
+    color: #281700;
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+  
+  .field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 25px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #281700;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  }
+  
+  .input-icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: white;
+  }
+  
+  .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+  }
+  
+  .form .btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2.5em;
+    gap: 2em;
+  }
+  
+  .button1 {
+    padding: 0.5em 2.1em;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #281700;
+    color: white;
+    
+  }
+  
+  .button1:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .button2 {
+    padding: 0.5em 2.1em;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #281700;
+    color: white;
+  }
+  
+  .button2:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .button3 {
+    margin-bottom: 3em;
+    padding: 0.5em;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #281700;
+    color: white;
+  }
+  
+  .button3:hover {
+    background-color: red;
+    color: white;
+  }
+
+  .login-prompt {
+    text-align: center;
+    margin-top: 1.5em;
+    font-size: 0.9em;
+    color: #281700;
+  }
+  
+  .login-btn {
+    background: none;
+    border: none;
+    color: #281700;
+    text-decoration: underline;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .login-btn:hover {
+    color: black;
+  }
+
+  .old-paper-container {
+    background: url('../FrontendAssets/oldpaper.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 20px;
+    color: #281700;
+}
+
+.word-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+}
+
+/* Title Styling */
+.title-text {
+    font-size: 3rem;
+    text-align: center;
+    color: #e0c097;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.7);
+    margin-bottom: 20px;
+}
+
+/* Navigation Links */
+.nav-links {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    background: transparent;
+}
+
+.nav-links a {
+    margin: 0 20px;
+    color: #d4b98d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    text-decoration: underline;
+    color: #ffde8b;
+}
+
+.character-card {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    color: #4d2d15;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.character-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #d4b98d;
+}
+
+.character-name {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+  
+  
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .form {
+        width: 90%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .word-title {
+    font-size: 2rem;
+}
+
+    .word-meaning {
+        font-size: 1.2rem;
+    }
+  }

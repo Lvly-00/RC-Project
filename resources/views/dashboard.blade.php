@@ -7,12 +7,12 @@
     @vite(['resources\css\app.css'])
 
 </head>
-<body>
+<body class="play-body" style="background: url('{{ asset('FrontendAssets/homepage.png') }}') no-repeat center center fixed; background-size: cover;">
     <x-navigation-bar />
 
     <div class="container mt-5">
         <!-- Play Button -->
-        <div class="text-center">
+        <div>
             <a href="{{ route('play') }}" class="btn btn-primary">
                 Play
             </a>
