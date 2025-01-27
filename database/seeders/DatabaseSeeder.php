@@ -4,39 +4,24 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use App\Models\Question;
 use App\Models\Choice;
+use Illuminate\Support\Facades\DB;
 
 
-class QuestionsTableSeeder extends Seeder
+
+class DatabaseSeeder extends Seeder
 {
     public function run()
     {
-        $question = Question::create([
-            'question' => 'huni pa ng ibon ay nakalulunos',
-            'chapter_id' => 1,
-        ]);
+        $chapters = [];
+        for ($i = 1; $i <= 15; $i++) {
+            $chapters[] = [
+                'id' => $i,
+                'name' => 'Chapter ' . $i,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ];
+        }
 
-        Choice::create([
-            'question_id' => $question->id,
-            'choice' => 'Nakakaawa',
-            'is_correct' => true,
-        ]);
-
-        Choice::create([
-            'question_id' => $question->id,
-            'choice' => 'Nakaalis',
-            'is_correct' => false,
-        ]);
-
-        Choice::create([
-            'question_id' => $question->id,
-            'choice' => 'Nakakagalak',
-            'is_correct' => false,
-        ]);
-
-        Choice::create([
-            'question_id' => $question->id,
-            'choice' => 'Nakakatakot',
-            'is_correct' => false,
-        ]);
+        DB::table('chapters')->insert($chapters);
     }
 }

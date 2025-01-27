@@ -1,9 +1,5 @@
 <x-chapter-layout>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+
 
     {{-- FROM HERE MAG-EEDIT --}}
     {{-- JUST COPY & PASTE THE WHOLE CODE FOR TEMPLATE. --}}
@@ -21,7 +17,6 @@
                 data-synonyms="sinundan, nilakaran">tinunton</span>
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p>137 Halos <span class="hoverable" data-word="nabibihay" data-audio="path/to/audio/mapanglaw.mp3"
@@ -37,7 +32,6 @@
                 data-synonyms="nagkliktikan, nag-ingay">naglagitik</span>
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p>138 Kaya ang ginawa'y <span class="hoverable" data-word="inagapayanan"
@@ -56,7 +50,6 @@
                 data-synonyms="pagdadalamhati, reklamo">himutok</span>
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p>139 Umupo't kinalong na <span class="hoverable" data-word="himutok" data-audio="path/to/audio/mapanglaw.mp3"
@@ -73,7 +66,6 @@
                 data-antonyms="kasiglahan, kasipagan" data-synonyms="pagkahapo, katamlayan">pagkalungayngay</span>
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p>140 Doon sa pagtitig sa <span class="hoverable" data-word="pagkalungayngay"
@@ -89,8 +81,6 @@
                 data-synonyms="katapusan, wakas">kinasapitan</span>.
         </p>
     </div>
-    <br>
-
     <div class="words">
         <p>141 <span class="hoverable" data-word="namamangha" data-audio="path/to/audio/mapanglaw.mp3"
                 data-definition-tag="Magulat" data-definition-eng="to be amazed"
@@ -105,7 +95,6 @@
                 data-synonyms="naiwan, napag-iwanan">inagapayanan</span>
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p>142 Gulung-gulong lubha ang kanyang loob,
@@ -118,7 +107,6 @@
                 data-synonyms="sinundan, nilakaran">tinunton</span>
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p>143 Sa <span class="hoverable" data-word="pagkalungayngay" data-audio="path/to/audio/mapanglaw.mp3"
@@ -129,15 +117,13 @@
             mata'y idinilat,
             <span class="hoverable" data-word="himutok" data-audio="path/to/audio/mapanglaw.mp3"
                 data-definition-tag="Pagdadalamhati, reklamo" data-definition-eng="lament, complaint"
-                data-example="Ang kanyang himutok ay narinig sa buong kabahayan."
-                data-antonyms="katuwaan, kasiyahan" data-synonyms="pagdadalamhati, reklamo">himutok</span> ang
+                data-example="Ang kanyang himutok ay narinig sa buong kabahayan." data-antonyms="katuwaan, kasiyahan"
+                data-synonyms="pagdadalamhati, reklamo">himutok</span> ang
             unang bati sa liwanag;
             sinundan ng taghoy na kahabag-habag;
             Nasaan ka, Laura, sa ganitong hirap?
         </p>
     </div>
-    <br>
-
     <div class="words">
         <p>144 Halina, giliw ko't gapos ko'y kalagin,
             kung mamatay ako'y gunitain mo rin;
@@ -149,7 +135,6 @@
                 data-synonyms="katapusan, wakas">kinasapitan</span>
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p>145 Ipinanganganib ay baka mabigla,
@@ -163,31 +148,43 @@
                 data-antonyms="kasiglahan, kasipagan" data-synonyms="pagkahapo, katamlayan">pagkalungayngay</span>
         </p>
     </div>
-    <br>
 
+    <!-- Inline Buttons -->
+    <div class="inline-buttons">
+        <a href="{{ route('chapters') }}"><button class="btn-danger">Back</button></a>
+        <button id="comment-logo">Comments</button>
+        <a href="{{ route('games.game11') }}"><button class="btn-primary">Next</button></a>
+    </div>
 
-    <hr>
-    <h3>Comments</h3>
-    <ul>
-        @if ($comments->isEmpty())
-            <p>No comments yet. Be the first to comment!</p>
-        @else
-            @foreach ($comments as $comment)
-                <li>
-                    <strong>{{ $comment->user->name }}</strong>: {{ $comment->comment }}
-                    <em>({{ $comment->created_at->diffForHumans() }})</em>
-                </li>
-            @endforeach
-        @endif
-    </ul>
-    <form action="{{ route('comments.store') }}" method="POST">
-        @csrf
-        <input type="hidden" name="chapter_number" value="{{ $number }}">
-        <div class="comment-container">
-            <textarea name="comment" id="comment" rows="2" required placeholder="comment as {{ Auth::user()->name }}"></textarea>
-            <button type="submit" class="send-icon">
-                submit
-            </button>
+    <!-- Comments Section -->
+    <div id="comments-section" class="comments" style="display: none;">
+        <div class="comment-header">
+            <h3 class="comment-title">Comments</h3>
+            <button id="close-comments">×</button>
         </div>
-    </form>
+        <div class="comment-content">
+            <ul class="comment-list">
+                @if ($comments->isEmpty())
+                    <li class="no-comments">No comments yet. Be the first to comment!</li>
+                @else
+                    @foreach ($comments as $comment)
+                        <li class="comment-item">
+                            <div class="comment-author">{{ $comment->user->name }}</div>
+                            <div class="comment-text">{{ $comment->comment }}</div>
+                            <div class="comment-time">{{ $comment->created_at->diffForHumans() }}</div>
+                        </li>
+                    @endforeach
+                @endif
+            </ul>
+        </div>
+        <form action="{{ route('comments.store') }}" method="POST" class="comment-form">
+            @csrf
+            <input type="hidden" name="chapter_number" value="{{ $number }}">
+            <div class="comment-container">
+                <textarea name="comment" id="comment" rows="2" required placeholder="Comment as {{ Auth::user()->name }}"></textarea>
+                <button type="submit" class="send-icon">Submit</button>
+            </div>
+        </form>
+    </div>
+    </div>
 </x-chapter-layout>

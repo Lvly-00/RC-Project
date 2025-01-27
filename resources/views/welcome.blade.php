@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite(['resources\css\app.css', 'resources\js\app.js'])
+    @vite(['resources\css\main.css', 'resources\js\app.js'])
 
 </head>
 
-<body style="background: url('{{ asset('FrontendAssets/bg.png') }}') no-repeat center center fixed; background-size: cover;">
+<body
+    style="background: url('{{ asset('FrontendAssets/bg.png') }}') no-repeat center center fixed; background-size: cover;">
     <div>
 
         <div>
@@ -33,6 +34,7 @@
                                 <div>
                                     <a href="{{ route('register') }}">
                                         REGISTER</a>
+                                </div>
                             @endif
                         @endauth
                     </nav>

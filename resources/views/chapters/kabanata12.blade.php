@@ -1,12 +1,5 @@
 <x-chapter-layout>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    {{-- FROM HERE MAG-EEDIT --}}
-    {{-- JUST COPY & PASTE THE WHOLE CODE FOR TEMPLATE. --}}
-    {{-- NO NEED NA GALAWIN ANG AUDIO FIILE --}}
     <h1 class="chapter">Kabanata 12: Batas ng Lahat ng Relihiyon</h1>
     <br>
 
@@ -24,7 +17,6 @@
             nang hindi mangyari'y nagngalit na lamang.
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p>147 Sagot ng gerero'y Huwag kang manganib,
@@ -40,7 +32,6 @@
             may kalong sa iyo ang nagtatangkilik.
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p>148 Kung <span class="hoverable"
@@ -56,7 +47,6 @@
             sa iyong nasapit na napakarawal.
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p>149 <span class="hoverable"
@@ -72,7 +62,6 @@
             sa lagay mo ngayo'y magkatoto tayo.
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p>150 Moro ako'y lubos na taong may dibdib
@@ -88,7 +77,6 @@
             natural na ley-ing sa aba'y mahapis.
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p>151 Anong gagawin ko'y aking napakinggan
@@ -104,7 +92,6 @@
             ng dalawang ganid, ng bangis na tangan.
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p>152 Nagbuntung-hininga itong abang kalong
@@ -113,7 +100,6 @@
             nalibing na ako sa tiyan ng leon.
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p>153 Payapa na naman disin yaring dibdib,
@@ -122,7 +108,6 @@
             ang aking hiningang kamataya't sakit.
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p>154 Itong iyong awa'y 'di ko hinahangad,
@@ -138,7 +123,6 @@
             na ang kamatayan ang buhay kong hanap.
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p>155 Dito napahiyaw sa malaking hapis
@@ -147,30 +131,44 @@
             at sa panlulumo'y kusang napahilig.
         </p>
     </div>
-    <br>
-    <hr>
-    <h3>Comments</h3>
-    <ul>
-        @if ($comments->isEmpty())
-            <p>No comments yet. Be the first to comment!</p>
-        @else
-            @foreach ($comments as $comment)
-                <li>
-                    <strong>{{ $comment->user->name }}</strong>: {{ $comment->comment }}
-                    <em>({{ $comment->created_at->diffForHumans() }})</em>
-                </li>
-            @endforeach
-        @endif
-    </ul>
-    <form action="{{ route('comments.store') }}" method="POST">
-        @csrf
-        <input type="hidden" name="chapter_number" value="{{ $number }}">
-        <div class="comment-container">
-            <textarea name="comment" id="comment" rows="2" required placeholder="comment as {{ Auth::user()->name }}"></textarea>
-            <button type="submit" class="send-icon">
-                submit
-            </button>
+
+    <!-- Inline Buttons -->
+    <div class="inline-buttons">
+        <a href="{{ route('chapters') }}"><button class="btn-danger">Back</button></a>
+        <button id="comment-logo">Comments</button>
+        <a href="{{ route('games.game12') }}"><button class="btn-primary">Next</button></a>
+    </div>
+
+    <!-- Comments Section -->
+    <div id="comments-section" class="comments" style="display: none;">
+        <div class="comment-header">
+            <h3 class="comment-title">Comments</h3>
+            <button id="close-comments">×</button>
         </div>
-    </form>
+        <div class="comment-content">
+            <ul class="comment-list">
+                @if ($comments->isEmpty())
+                    <li class="no-comments">No comments yet. Be the first to comment!</li>
+                @else
+                    @foreach ($comments as $comment)
+                        <li class="comment-item">
+                            <div class="comment-author">{{ $comment->user->name }}</div>
+                            <div class="comment-text">{{ $comment->comment }}</div>
+                            <div class="comment-time">{{ $comment->created_at->diffForHumans() }}</div>
+                        </li>
+                    @endforeach
+                @endif
+            </ul>
+        </div>
+        <form action="{{ route('comments.store') }}" method="POST" class="comment-form">
+            @csrf
+            <input type="hidden" name="chapter_number" value="{{ $number }}">
+            <div class="comment-container">
+                <textarea name="comment" id="comment" rows="2" required placeholder="Comment as {{ Auth::user()->name }}"></textarea>
+                <button type="submit" class="send-icon">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
 
 </x-chapter-layout>

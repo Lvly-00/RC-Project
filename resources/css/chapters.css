@@ -63,7 +63,7 @@ strong {
 }
 .card {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 0 100px;
+    padding:  120px;
     margin-bottom: 1rem;
     align-content: center;
     display: flex;

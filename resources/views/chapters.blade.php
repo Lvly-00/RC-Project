@@ -23,7 +23,7 @@
             <div class="row justify-evenly">
 
                 <!-- Kabanata Cards -->
-                @foreach (range(1, 30) as $chapter)
+                @foreach (range(1, 15) as $chapter)
                     <div class="col-md-4 mb-4">
                         <a href="{{ route('chapters.show', ['number' => $chapter]) }}" class="character-link">
                             <div class="character-card" style="background: url('{{ asset('FrontendAssets/oldpaper.png') }}') no-repeat center center; background-size: contain;">
@@ -33,8 +33,18 @@
                         </a>
                     </div>
                 @endforeach
+
+                <div class="col-12 mb-4">
+                    <a href="#" class="character-link">
+                        <div class="character-card" style="background: url('{{ asset('FrontendAssets/oldpaper.png') }}') no-repeat center center; background-size: contain; ">
+                            <div class=""><h1 >TBA</h1></div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
+
+
 </body>
 
 </html>

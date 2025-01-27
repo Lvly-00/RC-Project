@@ -3,11 +3,29 @@
 
 <head>
     <title>Kabanata {{ 1 }}</title>
-    @vite(['resources\css\game.css', 'resources\js\app.js'])
+    @vite(['resources/css/game.css', 'resources/js/app.js'])
 
     <script>
         const minScore = 3; // Set your minimum required score here
-        const highlightWords = ["nakalulunos", "kutad", "ganid ", "mapanglaw", "kahapisa't "]; // Define the words to highlight
+        const highlightWords = [
+            "nakalulunos", "kutad", "ganid", "mapanglaw", "dalamhati", "kulay-luksa",
+            "kasam-an", "mabangong", "poot", "tatarok", "lugami at hapo",
+            "lugami at hapo", "mababata", "giliw", "apuhapin", "ipupukol",
+            "nalungayngay", "nalimbag", "kahima't", "lugaming", "masawata",
+            "siyasatin", "ipinagkanulo", "siniphayo", "nagsasadlak", "napayukayok",
+            "umid", "kaginsa-ginsa'y", "tinutop", "himutok", "pikang",
+            "naghimutok", "pinagbaling-baling", "nananaghoy", "gunita", "namamalas",
+            "nagbabatis", "bangis", "palayaw", "esposong",
+            "pagsil-in", "luha", "lipos ng pighati", "pinamamayanan", "magbubo",
+            "nanatak", "marawal", "alibugha", "kaalipustahan", "nawala",
+            "naakay", "inuusig", "ipamilantik", "dawagan", "disin",
+            "nabibihay", "himutok", "nanlalata", "tinunton", "lumalagitik",
+            "sumapayapa", "kasuklamsuklam", "inihayag", "nagitlahanan", "nasasaklaw",
+            "kalumbay-lumbay", "natanto", "nahikayat", "pinanggalingan", "ipinamahayag",
+            "kaagapay", "sinusundo", "tinudla", "sakbat", "esposa",
+            "sukat", "manigas", "iniwan", "gawi", "mamalakhi"
+        ];
+
 
         function checkAnswer(event, choiceId, isCorrect) {
             event.preventDefault();
@@ -45,7 +63,7 @@
                 score++;
             });
 
-            document.getElementById('score-message').innerText = 'Your score: ' + score + ' / {{ count($questions) }}';
+            document.getElementById('score-message').innerText = 'Your score: ' + score + ' / {{ $questions->count() }}';
 
             if (score >= minScore) {
                 document.querySelector('input[name="chapter_number"]').value = nextChapter;
@@ -70,29 +88,28 @@
 <body>
     <div class="scroll">
         <h1>Kabanata {{ 1 }}</h1>
-        <form id="quiz-form" action="{{ route('kabanata.next', ['chapter' => 3]) }}" method="POST">
+        <form id="quiz-form" action="{{ route('kabanata.next', ['chapter' => 2]) }}" method="POST">
             @csrf
-            <input type="hidden" name="chapter_number" value="">
+            <input type="hidden" name="chapter_number" value="{{ 1 + 1 }}">
             @foreach ($questions as $question)
-                <div class="flashcard">
-                    <h2 class="question">{{ $question->question }}</h2>
-                    @foreach ($question->choices as $choice)
-                        <span class="choice" id="choice_{{ $choice->id }}" data-question-id="{{ $question->id }}"
-                            onclick="checkAnswer(event, {{ $choice->id }}, {{ $choice->is_correct ? 'true' : 'false' }})">
-                            {{ $choice->choice }}
-                            @if ($choice->is_correct)
-                                <strong>(Correct Answer)</strong>
-                            @endif
-                        </span>
-                    @endforeach
-                </div>
+            <div class="flashcard">
+                <h2 class="question">{{ $question->question }}</h2>
+                @foreach ($question->choices as $choice)
+                <span class="choice" id="choice_{{ $choice->id }}" data-question-id="{{ $question->id }}"
+                    onclick="checkAnswer(event, {{ $choice->id }}, {{ $choice->is_correct ? 'true' : 'false' }})">
+                    {{ $choice->choice }}
+                </span>
+                @endforeach
+            </div>
             @endforeach
 
-            <button type="button" onclick="submitQuiz(event, 2)">Next</button>
-            <!-- Change '2' to the desired chapter number -->
+            <div class="quiz-navigation">
+            <button type="button" class="btn-primary" onclick="submitQuiz(event, {{ 1 + 1 }})">Submit</button>
+            </div>
         </form>
-        <a href="{{ route('chapters') }}"><button class="btn-danger">Back</button></a>
-
+        <form action="{{ route('chapters') }}" method="GET">
+            <button type="submit" class="btn-danger">Back</button>
+        </form>
     </div>
 
     <div id="warning-modal" class="modal">

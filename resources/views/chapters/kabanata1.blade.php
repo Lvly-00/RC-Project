@@ -155,24 +155,7 @@
             </div>
         </div>
 
-        <script>
-            document.getElementById('comment-logo').addEventListener('click', function() {
-                var commentSection = document.getElementById('comments-section');
-                commentSection.style.display = commentSection.style.display === 'none' ? 'block' : 'none';
-            });
-
-            document.getElementById('close-comments').addEventListener('click', function() {
-                document.getElementById('comments-section').style.display = 'none';
-            });
-
-            window.addEventListener('click', function(event) {
-                var commentSection = document.getElementById('comments-section');
-                if (!commentSection.contains(event.target) && event.target.id !== 'comment-logo') {
-                    commentSection.style.display = 'none';
-                }
-            });
-        </script>
-
+   
 
 
         <script src="https://unpkg.com/@popperjs/core@2"></script>

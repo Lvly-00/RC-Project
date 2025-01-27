@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Kabanata {{ 2 }}</title>
+    <title>Kabanata {{ 1 }}</title>
     @vite(['resources\css\game.css', 'resources\js\app.js'])
 
     <script>
@@ -69,7 +69,7 @@
 
 <body>
     <div class="scroll">
-        <h1>Kabanata {{ 2 }}</h1>
+        <h1>Kabanata {{ 1 }}</h1>
         <form id="quiz-form" action="{{ route('kabanata.next', ['chapter' => 3]) }}" method="POST">
             @csrf
             <input type="hidden" name="chapter_number" value="">
@@ -88,7 +88,7 @@
                 </div>
             @endforeach
 
-            <button type="button" onclick="submitQuiz(event, 3)">Next</button>
+            <button type="button" onclick="submitQuiz(event, 2)">Next</button>
             <!-- Change '2' to the desired chapter number -->
         </form>
         <a href="{{ route('chapters') }}"><button class="btn-danger">Back</button></a>

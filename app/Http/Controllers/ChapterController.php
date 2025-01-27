@@ -10,7 +10,7 @@ class ChapterController extends Controller
 {
     public function showChapter($chapter)
     {
-        if ($chapter < 1 || $chapter > 30) {
+        if ($chapter < 1 || $chapter > 16) {
             return abort(404);
         }
 
