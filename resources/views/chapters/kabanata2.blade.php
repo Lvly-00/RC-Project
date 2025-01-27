@@ -1,18 +1,11 @@
 <x-chapter-layout>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
 
 
-    <span class="hoverable" data-word="" data-audio="" data-definition-tag="" data-definition-eng="" data-example=""
-        data-antonyms="" data-synonyms=""> </span>
+
     {{-- FROM HERE MAG-EEDIT --}}
     {{-- JUST COPY & PASTE THE WHOLE CODE FOR TEMPLATE. --}}
     {{-- NO NEED NA GALAWIN ANG AUDIO FIILE --}}
     <h1 class="chapter">Kabanata 2: Ang Binatang Nakagapos</h1>
-    <br>
 
     <div class="words">
         <p>8 Sa may gitna nitong mapanglaw na gubat,
@@ -20,7 +13,6 @@
             dito nakagapos ang kahabag-habag,
             isang pinag-usig ng masamang palad.</p>
     </div>
-    <br>
 
     <div class="words">
         <p>9 Bagun-taong basal na ang anyo't tindig,
@@ -28,7 +20,6 @@
             kundi si Narsiso'y tunay na Adonis,
             mukha'y sumisilang sa gitna ng sakit.</p>
     </div>
-    <br>
 
     <div class="words">
         <p>10 Makinis ang balat at anaki burok,
@@ -36,7 +27,6 @@
             bagong sapong ginto ang kulay ng buhok,
             sangkap ng katawa'y pawang magkaayos.</p>
     </div>
-    <br>
 
     <div class="words">
         <p>11 Dangan doo'y walang Oreadang Ninfas,
@@ -54,7 +44,6 @@
                 data-antonyms="Pangit, kapangitan." data-synonyms="Ganda, alindog.">karikta</span>'t hirap.
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p>12 Ang
@@ -68,7 +57,6 @@
             ganito'y damdamin ng may awang dibdib.
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p> 13 Mahiganting langit! bangis mo'y nasaan?
@@ -76,7 +64,6 @@
             bago'y ang bandila ng lalong kasam-an
             sa Reynong Albanya'y iniwawagayway.</p>
     </div>
-    <br>
 
     <div class="words">
         <p>14 Sa loob at labas ng bayan kong sawi,
@@ -89,7 +76,7 @@
             ininis sa hukay ng dusa't pighati.
         </p>
     </div>
-    <br>
+
 
     <div class="words">
         <p> 15 Ang magandang asal ay ipinupukol
@@ -107,7 +94,6 @@
             at inililibing na walang kabaong.
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p> 16 Nguni, at ang
@@ -120,7 +106,6 @@
             mabangong insenso ang isinusuob.
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p> 17 Kaliluha't sama ang ulo'y nagtayo
@@ -133,7 +118,6 @@
             ang luha na lamang ang pinatutulo.
         </p>
     </div>
-    <br>
 
     <div class="words">
         <p> 18 At ang balang bibig na binubukalan
@@ -148,7 +132,6 @@
                 data-synonyms="Malupit na kamatayan, masakit na pagpanaw.">dustang kamatayan.</span>
         </p>
     </div>
-    <br>
 
 
     <div class="words">
@@ -157,7 +140,7 @@
             ikaw ang dahilan ng kasam-ang lahat
             at niring nasapit na kahabag-habag!</p>
     </div>
-    <br>
+
 
     <div class="words">
         <p> 20 Sa korona dahil ng Haring Linceo,
@@ -165,7 +148,6 @@
             ang ipinangahas ng Konde Adolfo
             sabugan ng sama ang Albanyang Reyno.</p>
     </div>
-    <br>
 
     <div class="words">
         <p> 21 Ang lahat ng ito, maawaing Langit,
@@ -173,7 +155,7 @@
             mula ka ng buong katuwira't bait,
             pinayagang mong ilubog ng lupit.</p>
     </div>
-    <br>
+
 
     <div class="words">
         <p> 22 Makapangyarihang kamay mo'y ikilos,
@@ -181,7 +163,7 @@
             sa Reynong Albanya'y kusang ibulusok
             ang Iyong higanti sa masamang-loob.</p>
     </div>
-    <br>
+
 
     <div class="words">
         <p> 23 Bakit kalangita'y bingi ka sa akin?
@@ -190,7 +172,6 @@
             sampung tainga mo'y ipinangunguling?</p>
 
     </div>
-    <br>
 
     <div class="words">
         <p>24 Datapuwa't sino ang tatarok kaya
@@ -200,39 +181,63 @@
     </div>
     <br>
 
-    {{-- TASS LANG EDITABLE --}}
-    {{-- NO NEED NA GALAWIN. SA TAAS LANG ANG I-EDIT --}}
 
 
-    {{-- <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-        <x-nav-link :href="route('games.show', ['number'])">
-            {{ __('Game') }}
-        </x-nav-link>
-    </div> --}}
-        
-        <hr>
-        <h3>Comments</h3>
-        <ul>
-            @if ($comments->isEmpty())
-                <p>No comments yet. Be the first to comment!</p>
-            @else
-                @foreach ($comments as $comment)
-                    <li>
-                        <strong>{{ $comment->user->name }}</strong>: {{ $comment->comment }}
-                        <em>({{ $comment->created_at->diffForHumans() }})</em>
-                    </li>
-                @endforeach
-            @endif
-        </ul>
-        <form action="{{ route('comments.store') }}" method="POST">
-            @csrf
-            <input type="hidden" name="chapter_number" value="{{ $number }}">
-            <div class="comment-container">
-                <textarea name="comment" id="comment" rows="2" required placeholder="comment as {{ Auth::user()->name }}"></textarea>
-                <button type="submit" class="send-icon">
-                    submit
-                </button>
+            <!-- Inline Buttons -->
+            <div class="inline-buttons">
+                <a href="{{ route('chapters') }}"><button class="btn-danger">Back</button></a>
+                <button id="comment-logo">Comments</button>
+                <a href="{{ route('games.game2') }}"><button class="btn-primary">Next</button></a>
             </div>
-        </form>
+
+            <!-- Comments Section -->
+            <div id="comments-section" class="comments" style="display: none;">
+                <div class="comment-header">
+                    <h3 class="comment-title">Comments</h3>
+                    <button id="close-comments">×</button>
+                </div>
+                <div class="comment-content">
+                    <ul class="comment-list">
+                        @if ($comments->isEmpty())
+                            <li class="no-comments">No comments yet. Be the first to comment!</li>
+                        @else
+                            @foreach ($comments as $comment)
+                                <li class="comment-item">
+                                    <div class="comment-author">{{ $comment->user->name }}</div>
+                                    <div class="comment-text">{{ $comment->comment }}</div>
+                                    <div class="comment-time">{{ $comment->created_at->diffForHumans() }}</div>
+                                </li>
+                            @endforeach
+                        @endif
+                    </ul>
+                </div>
+                <form action="{{ route('comments.store') }}" method="POST" class="comment-form">
+                    @csrf
+                    <input type="hidden" name="chapter_number" value="{{ $number }}">
+                    <div class="comment-container">
+                        <textarea name="comment" id="comment" rows="2" required placeholder="Comment as {{ Auth::user()->name }}"></textarea>
+                        <button type="submit" class="send-icon">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById('comment-logo').addEventListener('click', function() {
+                var commentSection = document.getElementById('comments-section');
+                commentSection.style.display = commentSection.style.display === 'none' ? 'block' : 'none';
+            });
+
+            document.getElementById('close-comments').addEventListener('click', function() {
+                document.getElementById('comments-section').style.display = 'none';
+            });
+
+            window.addEventListener('click', function(event) {
+                var commentSection = document.getElementById('comments-section');
+                if (!commentSection.contains(event.target) && event.target.id !== 'comment-logo') {
+                    commentSection.style.display = 'none';
+                }
+            });
+        </script>
 
 </x-chapter-layout>

@@ -1,4 +1,118 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@plugin "flowbite/plugin";
+body {
+    background: linear-gradient(to bottom, #000, #725c0b);
+    font-family: 'Times New Roman', Times, serif;
+}
+.scroll {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff5e1; /* Light parchment color */
+    border: 2px solid #cc9966;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-image: url('https://www.transparenttextures.com/patterns/old-paper.png'); /* Parchment texture */
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center; /* Center content inside .scroll */
+}
+.choice {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border: 1px solid #8D493A;
+    border-radius: 5px;
+    background-color: #D0B8A8;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.choice.correct {
+    background-color: #d4edda; /* Light green */
+    border-color: #c3e6cb;
+}
+.choice.incorrect {
+    background-color: #f8d7da; /* Light red */
+    border-color: #f5c6cb;
+}
+.flashcard {
+    border: 1px solid #b88a63;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #fff5e1;
+    background-image: url('https://www.transparenttextures.com/patterns/linen.png'); /* Linen texture */
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center; /* Center content inside .flashcard */
+}
+.choice.selected {
+    background-color: #cce5ff; /* Light blue */
+    border-color: #b8daff;
+}
+h1, h3 {
+    color: #5d4037;
+}
+button {
+    background-color: #5d4037;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #4e342e;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top */
+}
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Make it square-like by adjusting width */
+    height: 30%; /* Make it square-like by adjusting height */
+    border-radius: 10px;
+    position: relative;
+    top: 20%; /* Move it down a bit from the top */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#warning-modal {
+    display: none;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #AB886D; /* Change to your desired color */
+    text-decoration: underline;
+}

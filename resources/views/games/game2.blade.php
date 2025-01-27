@@ -1,137 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kabanata Quiz 2</title>
+    <title>K {{ 2 }}</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+        .choice {
+            display: inline-block;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            margin-right: 10px;
         }
-        .question {
+        .choice.correct {
+            background-color: #d4edda; /* Light green */
+            border-color: #c3e6cb;
+        }
+        .choice.incorrect {
+            background-color: #f8d7da; /* Light red */
+            border-color: #f5c6cb;
+        }
+        .flashcard {
+            border: 1px solid #ccc;
+            padding: 20px;
             margin-bottom: 20px;
+            border-radius: 5px;
         }
-        .result {
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        .hidden {
-            display: none;
+        .choice.selected {
+            background-color: #cce5ff; /* Light blue */
+            border-color: #b8daff;
         }
     </style>
+    <script>
+        function checkAnswer(event, choiceId, isCorrect) {
+            event.preventDefault();
+            const choiceElement = document.getElementById('choice_' + choiceId);
+            const questionId = choiceElement.getAttribute('data-question-id');
+            const currentChoices = document.querySelectorAll(`[data-question-id='${questionId}']`);
+
+            currentChoices.forEach(choice => {
+                choice.classList.remove('selected', 'correct', 'incorrect');
+            });
+
+            choiceElement.classList.add('selected');
+            if (isCorrect) {
+                choiceElement.classList.add('correct');
+            } else {
+                choiceElement.classList.add('incorrect');
+            }
+        }
+
+        function submitQuiz(event, nextChapter) {
+            event.preventDefault();
+            let score = 0;
+            document.querySelectorAll('.choice.correct.selected').forEach(() => {
+                score++;
+            });
+            alert('Your score: ' + score + ' / {{ count($questions) }}');
+            document.querySelector('input[name="chapter_number"]').value = nextChapter;
+            document.getElementById('quiz-form').submit();
+        }
+    </script>
 </head>
 <body>
-    <h1>Kabanata Quiz</h1>
-    <div id="quiz-container">
-        <!-- Quiz content will be dynamically loaded here -->
-    </div>
-    <div id="result-container" class="hidden">
-        <p class="result"></p>
-        <button id="next-chapter" class="hidden">Next Chapter</button>
-    </div>
+    <h1>Kabanata {{ 2 }}</h1>
+    <form id="quiz-form" action="{{ route('kabanata.next', ['chapter' => 3]) }}" method="POST">
+        @csrf
+        <input type="hidden" name="chapter_number" value="">
+        @foreach ($questions as $question)
+            <div class="flashcard">
+                <h3>{{ $question->question }}</h3>
+                @foreach ($question->choices as $choice)
+                    <span class="choice" id="choice_{{ $choice->id }}" data-question-id="{{ $question->id }}" onclick="checkAnswer(event, {{ $choice->id }}, {{ $choice->is_correct ? 'true' : 'false' }})">
+                        {{ $choice->choice }}
+                    </span>
+                @endforeach
+            </div>
+        @endforeach
+        <button type="button" onclick="submitQuiz(event, 3)">Next</button> <!-- Change '2' to the desired chapter number -->
+    </form>
 
-    <script>
-        const chapters = 30;
-        const questionsPerChapter = 5;
-        const extraQuestions = 5;
-        const requiredScore = 3; // Minimum score to proceed to the next chapter
-
-        let currentChapter = 1;
-        let score = 0;
-
-        // Sample questions for each chapter (replace with actual questions)
-        const questions = {
-            1: [
-                { question: "Kabanata 1 Question 1", options: ["A", "B", "C", "D"], answer: "A" },
-                { question: "Kabanata 1 Question 2", options: ["A", "B", "C", "D"], answer: "B" },
-                { question: "Kabanata 1 Question 3", options: ["A", "B", "C", "D"], answer: "C" },
-                { question: "Kabanata 1 Question 4", options: ["A", "B", "C", "D"], answer: "D" },
-                { question: "Kabanata 1 Question 5", options: ["A", "B", "C", "D"], answer: "A" }
-            ],
-            // Add questions for other chapters here...
-            30: [
-                { question: "Kabanata 30 Question 1", options: ["A", "B", "C", "D"], answer: "A" },
-                { question: "Kabanata 30 Question 2", options: ["A", "B", "C", "D"], answer: "B" },
-                { question: "Kabanata 30 Question 3", options: ["A", "B", "C", "D"], answer: "C" },
-                { question: "Kabanata 30 Question 4", options: ["A", "B", "C", "D"], answer: "D" },
-                { question: "Kabanata 30 Question 5", options: ["A", "B", "C", "D"], answer: "A" }
-            ],
-            extra: [
-                { question: "Extra Question 1", options: ["A", "B", "C", "D"], answer: "A" },
-                { question: "Extra Question 2", options: ["A", "B", "C", "D"], answer: "B" },
-                { question: "Extra Question 3", options: ["A", "B", "C", "D"], answer: "C" },
-                { question: "Extra Question 4", options: ["A", "B", "C", "D"], answer: "D" },
-                { question: "Extra Question 5", options: ["A", "B", "C", "D"], answer: "A" }
-            ]
-        };
-
-        function loadQuiz(chapter) {
-            const quizContainer = document.getElementById('quiz-container');
-            quizContainer.innerHTML = '';
-
-            const chapterQuestions = questions[chapter];
-            const extra = questions.extra;
-
-            // Randomly select 5 questions (4 from chapter, 1 extra)
-            const selectedQuestions = [...chapterQuestions.slice(0, 4), extra[Math.floor(Math.random() * extra.length)]];
-
-            selectedQuestions.forEach((q, index) => {
-                const questionDiv = document.createElement('div');
-                questionDiv.className = 'question';
-                questionDiv.innerHTML = `<p>${index + 1}. ${q.question}</ <p>${index + 1}. ${q.question}</p>`;
-                q.options.forEach(option => {
-                    questionDiv.innerHTML += `<label><input type="radio" name="question${index}" value="${option}"> ${option}</label><br>`;
-                });
-                quizContainer.appendChild(questionDiv);
-            });
-
-            const submitButton = document.createElement('button');
-            submitButton.innerText = 'Submit';
-            submitButton.onclick = submitQuiz;
-            quizContainer.appendChild(submitButton);
-        }
-
-        function submitQuiz() {
-            const chapterQuestions = questions[currentChapter];
-            score = 0;
-
-            const selectedQuestions = [...chapterQuestions.slice(0, 4), questions.extra[Math.floor(Math.random() * questions.extra.length)]];
-
-            selectedQuestions.forEach((q, index) => {
-                const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
-                if (selectedOption && selectedOption.value === q.answer) {
-                    score++;
-                }
-            });
-
-            const resultContainer = document.getElementById('result-container');
-            const resultText = resultContainer.querySelector('.result');
-            resultText.innerText = `You scored ${score} out of ${questionsPerChapter + 1}.`;
-
-            if (score >= requiredScore) {
-                resultContainer.querySelector('#next-chapter').classList.remove('hidden');
-                resultContainer.querySelector('#next-chapter').onclick = nextChapter;
-            } else {
-                resultText.innerText += ' You need to score at least 3 to proceed.';
-            }
-
-            resultContainer.classList.remove('hidden');
-        }
-
-        function nextChapter() {
-            if (currentChapter < chapters) {
-                currentChapter++;
-                score = 0;
-                document.getElementById('result-container').classList.add('hidden');
-                loadQuiz(currentChapter);
-            } else {
-                alert('You have completed all chapters!');
-            }
-        }
-
-        // Load the first chapter on page load
-        loadQuiz(currentChapter);
-    </script>
 </body>
 </html>

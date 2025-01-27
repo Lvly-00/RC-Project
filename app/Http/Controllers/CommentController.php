@@ -17,7 +17,7 @@ class CommentController extends Controller
 
         Comment::create([
             'chapter_number' => $request->chapter_number,
-            'user_id' => Auth::id(), 
+            'user_id' => Auth::id(),
             'comment' => $request->comment,
         ]);
 

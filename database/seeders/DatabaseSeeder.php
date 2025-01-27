@@ -1,28 +1,42 @@
 <?php
-
 namespace Database\Seeders;
 
-
-use App\Models\User;
-use App\Models\Score;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Question;
+use App\Models\Choice;
 
-class DatabaseSeeder extends Seeder
+
+class QuestionsTableSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     */
-    public function run(): void
+    public function run()
     {
-        // User::factory(10)->create();
+        $question = Question::create([
+            'question' => 'huni pa ng ibon ay nakalulunos',
+            'chapter_id' => 1,
+        ]);
 
+        Choice::create([
+            'question_id' => $question->id,
+            'choice' => 'Nakakaawa',
+            'is_correct' => true,
+        ]);
 
-        User ::factory()->create(['name' => 'John Doe']);
-        User ::factory()->create(['name' => 'Jane Doe']);
+        Choice::create([
+            'question_id' => $question->id,
+            'choice' => 'Nakaalis',
+            'is_correct' => false,
+        ]);
 
-        Score::create(['user_id' => 1, 'score' => 100]);
-        Score::create(['user_id' => 1, 'score' => 50]);
-        Score::create(['user_id' => 2, 'score' => 200]);
+        Choice::create([
+            'question_id' => $question->id,
+            'choice' => 'Nakakagalak',
+            'is_correct' => false,
+        ]);
+
+        Choice::create([
+            'question_id' => $question->id,
+            'choice' => 'Nakakatakot',
+            'is_correct' => false,
+        ]);
     }
-}   
+}

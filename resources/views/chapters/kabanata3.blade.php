@@ -150,29 +150,62 @@
         </x-nav-link>
     </div> --}}
 
-    <hr>
-    <h3>Comments</h3>
-    <ul>
-        @if ($comments->isEmpty())
-            <p>No comments yet. Be the first to comment!</p>
-        @else
-            @foreach ($comments as $comment)
-                <li>
-                    <strong>{{ $comment->user->name }}</strong>: {{ $comment->comment }}
-                    <em>({{ $comment->created_at->diffForHumans() }})</em>
-                </li>
-            @endforeach
-        @endif
-    </ul>
-    <form action="{{ route('comments.store') }}" method="POST">
-        @csrf
-        <input type="hidden" name="chapter_number" value="{{ $number }}">
-        <div class="comment-container">
-            <textarea name="comment" id="comment" rows="2" required placeholder="comment as {{ Auth::user()->name }}"></textarea>
-            <button type="submit" class="send-icon">
-                submit
-            </button>
+            <!-- Inline Buttons -->
+            <div class="inline-buttons">
+                <a href="{{ route('chapters') }}"><button class="btn-danger">Back</button></a>
+                <button id="comment-logo">Comments</button>
+                <a href="{{ route('games.game1') }}"><button class="btn-primary">Next</button></a>
+            </div>
+
+            <!-- Comments Section -->
+            <div id="comments-section" class="comments" style="display: none;">
+                <div class="comment-header">
+                    <h3 class="comment-title">Comments</h3>
+                    <button id="close-comments">×</button>
+                </div>
+                <div class="comment-content">
+                    <ul class="comment-list">
+                        @if ($comments->isEmpty())
+                            <li class="no-comments">No comments yet. Be the first to comment!</li>
+                        @else
+                            @foreach ($comments as $comment)
+                                <li class="comment-item">
+                                    <div class="comment-author">{{ $comment->user->name }}</div>
+                                    <div class="comment-text">{{ $comment->comment }}</div>
+                                    <div class="comment-time">{{ $comment->created_at->diffForHumans() }}</div>
+                                </li>
+                            @endforeach
+                        @endif
+                    </ul>
+                </div>
+                <form action="{{ route('comments.store') }}" method="POST" class="comment-form">
+                    @csrf
+                    <input type="hidden" name="chapter_number" value="{{ $number }}">
+                    <div class="comment-container">
+                        <textarea name="comment" id="comment" rows="2" required placeholder="Comment as {{ Auth::user()->name }}"></textarea>
+                        <button type="submit" class="send-icon">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </form>
+
+        <script>
+            document.getElementById('comment-logo').addEventListener('click', function() {
+                var commentSection = document.getElementById('comments-section');
+                commentSection.style.display = commentSection.style.display === 'none' ? 'block' : 'none';
+            });
+
+            document.getElementById('close-comments').addEventListener('click', function() {
+                document.getElementById('comments-section').style.display = 'none';
+            });
+
+            window.addEventListener('click', function(event) {
+                var commentSection = document.getElementById('comments-section');
+                if (!commentSection.contains(event.target) && event.target.id !== 'comment-logo') {
+                    commentSection.style.display = 'none';
+                }
+            });
+        </script>
+
 
 </x-chapter-layout>

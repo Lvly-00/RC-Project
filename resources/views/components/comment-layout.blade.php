@@ -1,4 +1,4 @@
-<form action="{{ route('comments.store') }}" method="POST">
+<form class="com-sec" action="{{ route('comments.store') }}" method="POST">
     @csrf
     <input type="hidden" name="chapter_number" value="{{ $number }}">
     <div>

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('chapter_number'); // Chapter number
             $table->unsignedBigInteger('user_id'); // User ID
+            $table->foreignId('chapter_id')->constrained('chapters')->onDelete('cascade');
             $table->text('comment'); // The comment itself
             $table->timestamps(); // Created at and updated at timestamps
 
