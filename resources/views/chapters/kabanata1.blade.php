@@ -1,7 +1,5 @@
 <x-chapter-layout>
 
-
-
     {{-- FROM HERE MAG-EEDIT --}}
     {{-- JUST COPY & PASTE THE WHOLE CODE FOR TEMPLATE. --}}
     {{-- NO NEED NA GALAWIN ANG AUDIO FIILE --}}

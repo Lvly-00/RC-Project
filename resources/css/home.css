@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'IMFellDWPica';
+    src: url('../../public/fonts/IMFellDWPica-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'IMFellDWPica', serif;
+    position: relative;
+}
+
+nav {
+    background-color: #887f6780;
+    position: relative;
+}
+
+.navbar-brand {
+    text-align: center;
+    color: #fbd9b5;
+}
+
+.navbar-brand h3 {
+    color: #fbd9b5;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand h3:hover {
+    color: #fff651;
+}
+
+h3 {
+    font-size: 3em;
+    margin-top: 0.5em;
+    margin-bottom: -0.2em;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #fbd9b5;
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a.active {
+    color: #000;
+    background-color: #fbd9b5;
+    border-radius: 30px;
+}
+
+.btn {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 0.6em;
+    color: #fbd9b5;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+
+  .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #fbd9b5;
+    transition: 0.5s ease;
+  }
+
+  .btn:hover {
+    color: #000000;
+    transition-delay: 0.5s;
+  }
+
+  .btn:hover::before {
+    width: 100%;
+  }
+
+  .btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #fbd9b5;
+    transition: 0.4s ease;
+    z-index: -1;
+    border-radius: 30px;
+  }
+
+  .btn:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: rgb(0, 0, 0);
+  }
+
+
+button {
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.2em;
+    background-color: #e6d6c4;
+    border: 0.08em solid #2B1700;
+    border-radius: 0.3em;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  button span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #e6d6c4;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #2B1700;
+    border: 0.08em solid #2B1700;
+    box-shadow: 0 0.4em 0.1em 0.019em #2B1700;
+  }
+
+  button span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #2B1700;
+  }
+
+  button span:not(hover) {
+    transition: all 1s;
+  }
+
+  .logout-btn {
+    position: absolute;
+    top: 20px; /* Adjust this value to fine-tune the vertical positioning */
+    right: 20px; /* Adjust this value to fine-tune the horizontal positioning */
+}

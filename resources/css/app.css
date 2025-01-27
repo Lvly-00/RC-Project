@@ -4,13 +4,17 @@
 @plugin "flowbite/plugin";
 
 
-@font-face {
-    font-family: 'IMFellDWPica';
-    src: url('path-to-fonts/IMFellDWPica-Regular.ttf') format('truetype');
-  }
-
 body {
     font-family: 'Georgia', serif;
+}
+
+
+.card {
+    margin-top: 0;
+}
+
+.card-body {
+    padding-top: 0;
 }
 
 .form {
@@ -48,7 +52,7 @@ body {
     justify-content: center;
     gap: 0.5em;
     border-radius: 7px;
-    padding: 0.6em;
+    padding: 0.2em 0.3em;
     border: none;
     outline: none;
     color: white;
@@ -166,7 +170,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* Title Styling */
 .title-text {
     font-size: 3rem;
     text-align: center;
@@ -175,7 +178,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Navigation Links */
 .nav-links {
     text-align: center;
     font-size: 1.5rem;
@@ -198,15 +200,15 @@ body {
 }
 
 .character-card {
-    width: 250px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 0px auto;
+    padding: 20px 5px;
     color: #4d2d15;
     font-family: 'Georgia', serif;
     font-weight: bold;
@@ -214,16 +216,26 @@ body {
 }
 
 .character-img {
-    width: 150px;
-    height: 150px;
+    width: 60%;
+    height: 60%;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #d4b98d;
+    align-self: center;
 }
 
 .character-name {
     margin-top: 15px;
     font-size: 1.5rem;
+}
+
+.character-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from the parent */
+}
+
+.character-link:hover .character-card {
+    transform: scale(1.05); /* Optional: Add hover effect */
+    transition: transform 0.2s ease-in-out;
 }
 
 .remember-me, a.forgot-password {

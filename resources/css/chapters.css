@@ -2,3 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 @plugin "flowbite/plugin";
+
+@font-face {
+    font-family: 'PatrickHand';
+    src: url('../../public/fonts/PatrickHand-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'PatrickHand';
+}
+
+.chapter {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 20px;
+    margin-left:37%
+}
+
+
+.words p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media (max-width: 600px) {
+    .chapter {
+        width: 90%;
+        font-size: 200%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .words p {
+    font-size: 1rem;
+    margin: 0% 35%;
+    }
+
+}

@@ -17,6 +17,15 @@
         a{
             color: #4c4c4c;
         }
+
+        @font-face {
+        font-family: 'IMFellDWPica';
+        src: url('/fonts/IMFellDWPica-Regular.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'IMFellDWPica', serif;
+        }
     </style>
     <title>Florante at Laura</title>
 </head>

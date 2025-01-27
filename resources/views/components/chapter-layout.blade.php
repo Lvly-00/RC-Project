@@ -11,39 +11,35 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    {{-- <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Gloria+Hallelujah&display=swap --}}
+{{-- " rel="stylesheet"> --}}
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    {{-- <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" /> --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Scripts -->
     @vite(['resources\css\app.css', 'resources\css\chapters.css', 'resources\js\chapters.js'])
 </head>
 
-<body class="chapters-body" style="background: url('{{ asset('FrontendAssets/homepage.png') }}') no-repeat center center fixed; background-size: cover;">
-    <div class="min-h-screen">
-        @include('components.navigation-bar')
+<body class="chapters-body" style="background: url('{{ asset('FrontendAssets/kabanata3.png') }}') no-repeat center center fixed; background-size: cover;">
 
         <!-- Page Content -->
-        <main >
-
-            <div class="card" style="width: 50rem;top: 100px;">
+        <main class="d-flex justify-content-center align-items-center min-vh-100">
+            <div class="card" style="width: 100rem; background: transparent;">
                 <div>
                     <div class="back-button">
                         <a href="{{ route('chapters') }}">
                             <button class="cursor-pointer duration-200 hover:scale-125 active:scale-100" title="Go Back">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" class="stroke-white"><path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" d="M11 6L5 12M5 12L11 18M5 12H19"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24">
+                                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" d="M11 6L5 12M5 12L11 18M5 12H19"></path>
+                                </svg>
                             </button>
                         </a>
                     </div>
                 </div>
-                <div class="card-body" style="background: url('{{ asset('FrontendAssets/kabanata1.png') }}') no-repeat center center fixed; background-size: cover;">
-                    <p class="card-text"> {{ $slot }}</p>
+                <div class="card-body" style="background: transparent;">
+                    <p class="card-text">{{ $slot }}</p>
                 </div>
-
-
-
-
             </div>
 
             <div id="sidebar" class="sidebar hidden">
@@ -95,12 +91,10 @@
                 </div>
             </div>
         </main>
-    </div>
 
 
 
     </div>
-
 
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>

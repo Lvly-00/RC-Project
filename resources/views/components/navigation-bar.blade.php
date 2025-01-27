@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    {{-- <link rel="stylesheet" href="resources/css/home.css"> --}}
+    @vite("resources/css/home.css")
+
     <title>Document</title>
 
     <style>
@@ -14,14 +17,41 @@
         }
 
     </style>
+
 </head>
+
+<body>
+
+        <div class="container-fluid">
+            <!-- Centered Title -->
+            <a href="{{ route('dashboard') }}" class="navbar-brand">
+                <h3>Florante at Laura</h3>
+            </a>
+
+            <!-- Log out button -->
+            <div class="logout-btn">
+                <form action="{{ route('signout') }}" method="POST">
+                    @csrf
+                    <button> <span> Log out </span> </button>
+                </form>
+            </div>
+        </div>
+
+    <!-- Navigation links under the title -->
+    <div class="nav-links">
+        <a class="btn" href="{{ route('chapters') }}">Mga Kabanata</a>
+        <a class="btn" href="{{ route('characters') }}">Mga Tauhan</a>
+        <a class="btn" href="{{ route('play') }}">Play</a>
+        <a class="btn" href="#">Settings</a>
+    </div>
+{{-- </head>
 
 <body>
 
     <nav>
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
             <a href="https://img.logoipsum.com/329.svg" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <h3><a href="{{ route('dashboard') }}">Florante at Laura</a></h3>
+                <h3><a href="{{ route('dashboard') }}" class="title">Florante at Laura</a></h3>
                 <span class="self-center text-2xl font-semibold whitespace-nowrap"></span>
             </a>
             <div class="flex items-center space-x-6 rtl:space-x-reverse">
