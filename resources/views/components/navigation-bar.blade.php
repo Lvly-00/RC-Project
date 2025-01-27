@@ -6,63 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    {{-- <link rel="stylesheet" href="resources/css/home.css"> --}}
+    @vite("resources/css/home.css")
+
     <title>Document</title>
 
     <style>
         nav {
-            background-color: #887f6780;
+            /*background-color: #887f6780;*/
         }
 
     </style>
+
 </head>
 
 <body>
 
-    <nav>
-        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-            <a href="https://img.logoipsum.com/329.svg" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <h3><a href="{{ route('dashboard') }}">Florante at Laura</a></h3>
-                <span class="self-center text-2xl font-semibold whitespace-nowrap"></span>
+        <div class="container-fluid">
+            <!-- Centered Title -->
+            <a href="{{ route('dashboard') }}" class="navbar-brand">
+                <h3>Florante at Laura</h3>
             </a>
-            <div class="flex items-center space-x-6 rtl:space-x-reverse">
-                <a href="{{ route('characters') }}">Tauhan</a>
+
+            <!-- Log out button -->
+            <div class="logout-btn">
                 <form action="{{ route('signout') }}" method="POST">
                     @csrf
-                    <button
-                        class="text-gray-900 block w-full -lg border border-gray-200 p-2 text-center text-base font-medium transition hover:border-red-300 hover:bg-red-7s00 hover:text-gray-500">
-                        Log out</button>
+                    <button> <span> Log out </span> </button>
                 </form>
             </div>
         </div>
-    </nav>
-{{--
-    <nav class="no-border fixed split-nav">
-        <div class="nav-brand">
-            <h3><a href="{{ route('dashboard') }}">Florante at Laura</a></h3>
-        </div>
-        <div class="collapsible">
-            <input id="collapsible1" type="checkbox" name="collapsible1">
-            <label for="collapsible1">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </label>
-            <div class="collapsible-body">
-                <ul class="inline">
-                    <li><a href="{{ route('leaderboard') }}">Leaderboards</a></li>
-                    <li><a href="{{ route('characters') }}">Tauhan</a></li>
-                    <li>
-                        <form action="{{ route('signout') }}" method="POST">
-                            @csrf
-                            <button
-                                class="text-gray-900 block w-full -lg border border-gray-200 p-2 text-center text-base font-medium transition hover:border-red-300 hover:bg-red-400 hover:text-gray-500">
-                                Log out</button>
-                        </form>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> --}}
+
+    <!-- Navigation links under the title -->
+    <div class="nav-links">
+        <a class="btn" href="{{ route('chapters') }}">Mga Kabanata</a>
+        <a class="btn" href="{{ route('characters') }}">Mga Tauhan</a>
+        <a class="btn" href="{{ route('play') }}">Mga Tagalog Na Salita</a>
+
+    </div>
 
     <script>
         // Initialize Flowbite dropdowns
