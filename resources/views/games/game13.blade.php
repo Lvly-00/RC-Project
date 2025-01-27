@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Kabanata {{ 1 }}</title>
+    <title>Kabanata {{ 13 }}</title>
     @vite(['resources\css\game.css', 'resources\js\app.js'])
 
     <script>
@@ -85,7 +85,7 @@
 
 <body>
     <div class="scroll">
-        <h1>Kabanata {{ 1 }}</h1>
+        <h1>Kabanata {{ 13 }}</h1>
         <form id="quiz-form" action="{{ route('kabanata.next', ['chapter' => 3]) }}" method="POST">
             @csrf
             <input type="hidden" name="chapter_number" value="">
@@ -96,9 +96,7 @@
                         <span class="choice" id="choice_{{ $choice->id }}" data-question-id="{{ $question->id }}"
                             onclick="checkAnswer(event, {{ $choice->id }}, {{ $choice->is_correct ? 'true' : 'false' }})">
                             {{ $choice->choice }}
-                            @if ($choice->is_correct)
-                                <strong>(Correct Answer)</strong>
-                            @endif
+
                         </span>
                     @endforeach
                 </div>

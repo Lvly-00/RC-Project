@@ -96,9 +96,7 @@
                         <span class="choice" id="choice_{{ $choice->id }}" data-question-id="{{ $question->id }}"
                             onclick="checkAnswer(event, {{ $choice->id }}, {{ $choice->is_correct ? 'true' : 'false' }})">
                             {{ $choice->choice }}
-                            @if ($choice->is_correct)
-                                <strong>(Correct Answer)</strong>
-                            @endif
+
                         </span>
                     @endforeach
                 </div>
