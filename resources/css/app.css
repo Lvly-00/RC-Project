@@ -143,7 +143,7 @@ body {
   }
 
   .login-btn:hover, .sign-up-btn:hover, a.forgot-password:hover{
-    color: rgb(90, 187, 243);
+    color: rgb(46, 144, 255);
   }
 
   .old-paper-container {
