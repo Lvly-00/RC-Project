@@ -6,7 +6,7 @@
 
 </head>
 <body>
-<div class="container" style="padding:50px;">
+<div class="container" style="padding: 10px 70px;">
     @yield('content')
 </div>
 </body>

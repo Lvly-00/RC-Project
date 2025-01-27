@@ -36,18 +36,21 @@
                     @endif
                 </div>
 
-                <div class="field">
-                    <label class="remember-me">
-                        <input type="checkbox" name="remember"> Remember Me
-                    </label>
+                <button type="submit" class="button1">Login</button>
+
+                <div class="remember-forgot">
+                    <div class="remember-me">
+                        <input type="checkbox" name="remember-me" id="remember-me">
+                        <label for="remember-me"> Remember Me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot password?</a>
                 </div>
 
-                <div class="btn">
-                    <button type="submit" class="button1">Login</button>
-                    <button type="button" class="button2">Sign Up</button>
-                </div>
+                <div class="btn"></div>
 
-                <button type="button" class="button3">Forgot Password</button>
+                <div class="sign-up">
+                    Don't have an account yet? <a href="{{ route('register-user') }}" class="sign-up-btn"><i>Create account</i></a>
+                </div>
             </form>
         </div>
     </main>
