@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -12,6 +13,9 @@ class Comment extends Model
         'chapter_number',
         'user_id',
         'comment',
+        'chapter_id',
+        'created_at',
+        'updated_at',
     ];
 
     // Define the relationship with the User model
