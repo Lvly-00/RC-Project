@@ -28,13 +28,13 @@
                 <img src="https://img.logoipsum.com/329.svg" class="h-8" alt="Flowbite Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap"></span>
             </a>
-            <div class="flex items-center space-x-6 rtl:space-x-reverse">
+            {{-- <div class="flex items-center space-x-6 rtl:space-x-reverse">
                 <a href="{{ route('login') }}"
                     class="text-sm  text-white-100 dark:text-red-500 hover:underline">Login</a>
                 <a href="{{ route('register-user') }}"
                     class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Register</a>
 
-            </div>
+            </div> --}}
         </div>
     </nav>
 

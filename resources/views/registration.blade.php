@@ -49,9 +49,7 @@
                     <input placeholder="Confirm Password" class="input-field" type="password" name="password_confirmation">
                 </div>
 
-                <div class="btn">
-                    <button class="button1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
-                </div>
+                <button type="submit" class="button3">Register</button>
 
                 <p class="login-prompt">
                     Already have an account? <a href="{{ route('login') }}" class="login-btn">Log In</a>

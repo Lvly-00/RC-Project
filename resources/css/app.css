@@ -8,11 +8,11 @@
     font-family: 'IMFellDWPica';
     src: url('path-to-fonts/IMFellDWPica-Regular.ttf') format('truetype');
   }
-  
+
 body {
     font-family: 'Georgia', serif;
 }
-  
+
 .form {
     display: flex;
     flex-direction: column;
@@ -24,16 +24,16 @@ body {
     background-color: #F5EFE8;
     border-radius: 25px;
     transition: .4s ease-in-out;
-    max-width: 400px; 
+    max-width: 400px;
     margin-left: auto;
     box-shadow: 10px 0 15px #24201b;
   }
-  
+
   .form:hover {
     transform: scale(1.05);
     border: 1px solid black;
   }
-  
+
   #heading {
     text-align: center;
     margin: 2em;
@@ -41,13 +41,13 @@ body {
     font-size: 1.2em;
     font-weight: bolder;
   }
-  
+
   .field {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5em;
-    border-radius: 25px;
+    border-radius: 7px;
     padding: 0.6em;
     border: none;
     outline: none;
@@ -55,13 +55,13 @@ body {
     background-color: #281700;
     box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
   }
-  
+
   .input-icon {
     height: 1.3em;
     width: 1.3em;
     fill: white;
   }
-  
+
   .input-field {
     background: none;
     border: none;
@@ -69,7 +69,7 @@ body {
     width: 100%;
     color: #d3d3d3;
   }
-  
+
   .form .btn {
     display: flex;
     justify-content: center;
@@ -77,23 +77,23 @@ body {
     margin-top: 2.5em;
     gap: 2em;
   }
-  
+
   .button1 {
-    padding: 0.5em 2.1em;
+    padding: 0.5em 1.1em;
     border-radius: 7px;
     border: none;
     outline: none;
     transition: .4s ease-in-out;
     background-color: #281700;
     color: white;
-    
+
   }
-  
+
   .button1:hover {
     background-color: black;
     color: white;
   }
-  
+
   .button2 {
     padding: 0.5em 2.1em;
     border-radius: 7px;
@@ -103,14 +103,15 @@ body {
     background-color: #281700;
     color: white;
   }
-  
+
   .button2:hover {
     background-color: black;
     color: white;
   }
-  
+
   .button3 {
-    margin-bottom: 3em;
+    margin-top: 3em;
+    text-align: center;
     padding: 0.5em;
     border-radius: 7px;
     border: none;
@@ -119,7 +120,7 @@ body {
     background-color: #281700;
     color: white;
   }
-  
+
   .button3:hover {
     background-color: red;
     color: white;
@@ -127,23 +128,22 @@ body {
 
   .login-prompt {
     text-align: center;
-    margin-top: 1.5em;
-    font-size: 0.9em;
+    font-size: 0.8rem;
     color: #281700;
   }
-  
-  .login-btn {
+
+  .login-btn, .sign-up-btn {
     background: none;
     border: none;
     color: #281700;
     text-decoration: underline;
-    font-size: 0.9em;
+    font-size: 0.8rem;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
   }
-  
-  .login-btn:hover {
-    color: black;
+
+  .login-btn:hover, .sign-up-btn:hover, a.forgot-password:hover{
+    color: rgb(90, 187, 243);
   }
 
   .old-paper-container {
@@ -225,11 +225,42 @@ body {
     margin-top: 15px;
     font-size: 1.5rem;
 }
-  
-  
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
+
+.remember-me, a.forgot-password {
+    font-size: 0.8rem;
+    max-width: fit-content;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.remember-me {
+    display: inline;
+}
+
+a.forgot-password {
+    display: inline;
+    color:#281700;
+}
+
+.sign-up {
+    margin-bottom: 2.1em;
+    font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
     .form {
         width: 90%;
         padding-left: 1em;
