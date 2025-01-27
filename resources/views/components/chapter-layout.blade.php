@@ -24,15 +24,37 @@
     </style>
 </head>
 
-<body class="chapters-body">
+<body class="chapters-body" style="background: url('{{ asset('FrontendAssets/homepage.png') }}') no-repeat center center fixed; background-size: cover;">
     <div class="min-h-screen">
         <!-- Page Content -->
+<<<<<<< HEAD
         <main>
             <div class="card">
                 <div class="card-body">
                     {{-- <a href="{{ route('chapters') }}"><button class="btn-danger">Back</button></a> --}}
                     <p class="card-text">{{ $slot }}</p>
                 </div>
+=======
+        <main >
+
+            <div class="card" style="width: 50rem;top: 100px;">
+                <div>
+                    <div class="back-button">
+                        <a href="{{ route('chapters') }}">
+                            <button class="cursor-pointer duration-200 hover:scale-125 active:scale-100" title="Go Back">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" class="stroke-white"><path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" d="M11 6L5 12M5 12L11 18M5 12H19"></path></svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body" style="background: url('{{ asset('FrontendAssets/kabanata1.png') }}') no-repeat center center fixed; background-size: cover;">
+                    <p class="card-text"> {{ $slot }}</p>
+                </div>
+
+
+
+
+>>>>>>> c7416c2d9edd129082c11516a836c2f920cd59c1
             </div>
 
             <div id="sidebar" class="sidebar hidden">
