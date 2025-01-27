@@ -13,16 +13,17 @@ return new class extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('chapter_number'); // Chapter number
-            $table->unsignedBigInteger('user_id'); // User ID
+            $table->unsignedBigInteger('chapter_number');
+            $table->unsignedBigInteger('user_id');
             $table->foreignId('chapter_id')->constrained('chapters')->onDelete('cascade');
-            $table->text('comment'); // The comment itself
-            $table->timestamps(); // Created at and updated at timestamps
+            $table->text('comment');
+            $table->timestamps();
 
             // Foreign key constraint
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
+
 
     /**
      * Reverse the migrations.

@@ -154,9 +154,15 @@
         </div>
         <form action="{{ route('comments.store') }}" method="POST" class="comment-form">
             @csrf
-            <input type="hidden" name="chapter_number" value="{{ $number }}">
+            <!-- Pass dynamic values for chapter_number and chapter_id -->
+            <input type="hidden" name="chapter_number" value="{{ 8 }}"> <!-- Dynamic chapter number -->
+            <input type="hidden" name="chapter_id" value="{{  }}"> <!-- Dynamic chapter ID -->
+
             <div class="comment-container">
+                <!-- Comment textarea -->
                 <textarea name="comment" id="comment" rows="2" required placeholder="Comment as {{ Auth::user()->name }}"></textarea>
+
+                <!-- Submit button -->
                 <button type="submit" class="send-icon">Submit</button>
             </div>
         </form>

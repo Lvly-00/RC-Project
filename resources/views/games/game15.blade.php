@@ -7,8 +7,24 @@
 
     <script>
         const minScore = 3; // Set your minimum required score here
-        const highlightWords = ["nakalulunos", "kutad", "ganid ", "mapanglaw", "kahapisa't "]; // Define the words to highlight
-
+        const highlightWords = [
+            "nakalulunos", "kutad", "ganid", "mapanglaw", "dalamhati", "kulay-luksa",
+            "kasam-an", "mabangong", "poot", "tatarok", "lugami at hapo",
+            "lugami at hapo", "mababata", "giliw", "apuhapin", "ipupukol",
+            "nalungayngay", "nalimbag", "kahima't", "lugaming", "masawata",
+            "siyasatin", "ipinagkanulo", "siniphayo", "nagsasadlak", "napayukayok",
+            "umid", "kaginsa-ginsa'y", "tinutop", "himutok", "pikang",
+            "naghimutok", "pinagbaling-baling", "nananaghoy", "gunita", "namamalas",
+            "nagbabatis", "bangis", "palayaw", "esposong",
+            "pagsil-in", "luha", "lipos ng pighati", "pinamamayanan", "magbubo",
+            "nanatak", "marawal", "alibugha", "kaalipustahan", "nawala",
+            "naakay", "inuusig", "ipamilantik", "dawagan", "disin",
+            "nabibihay", "himutok", "nanlalata", "tinunton", "lumalagitik",
+            "sumapayapa", "kasuklamsuklam", "inihayag", "nagitlahanan", "nasasaklaw",
+            "kalumbay-lumbay", "natanto", "nahikayat", "pinanggalingan", "ipinamahayag",
+            "kaagapay", "sinusundo", "tinudla", "sakbat", "esposa",
+            "sukat", "manigas", "iniwan", "gawi", "mamalakhi"
+        ];
         function checkAnswer(event, choiceId, isCorrect) {
             event.preventDefault();
             const choiceElement = document.getElementById('choice_' + choiceId);
@@ -80,9 +96,7 @@
                         <span class="choice" id="choice_{{ $choice->id }}" data-question-id="{{ $question->id }}"
                             onclick="checkAnswer(event, {{ $choice->id }}, {{ $choice->is_correct ? 'true' : 'false' }})">
                             {{ $choice->choice }}
-                            @if ($choice->is_correct)
-                                <strong>(Correct Answer)</strong>
-                            @endif
+
                         </span>
                     @endforeach
                 </div>

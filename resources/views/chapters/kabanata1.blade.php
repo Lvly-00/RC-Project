@@ -114,51 +114,59 @@
         <br>
 
 
-            <!-- Your other page content here -->
+        <!-- Your other page content here -->
 
-            <!-- Inline Buttons -->
-            <div class="inline-buttons">
-                <a href="{{ route('chapters') }}"><button class="btn-danger">Back</button></a>
-                <button id="comment-logo">Comments</button>
-                <a href="{{ route('games.game1') }}"><button class="btn-primary">Next</button></a>
-            </div>
-
-            <!-- Comments Section -->
-            <div id="comments-section" class="comments" style="display: none;">
-                <div class="comment-header">
-                    <h3 class="comment-title">Comments</h3>
-                    <button id="close-comments">×</button>
-                </div>
-                <div class="comment-content">
-                    <ul class="comment-list">
-                        @if ($comments->isEmpty())
-                            <li class="no-comments">No comments yet. Be the first to comment!</li>
-                        @else
-                            @foreach ($comments as $comment)
-                                <li class="comment-item">
-                                    <div class="comment-author">{{ $comment->user->name }}</div>
-                                    <div class="comment-text">{{ $comment->comment }}</div>
-                                    <div class="comment-time">{{ $comment->created_at->diffForHumans() }}</div>
-                                </li>
-                            @endforeach
-                        @endif
-                    </ul>
-                </div>
-                <form action="{{ route('comments.store') }}" method="POST" class="comment-form">
-                    @csrf
-                    <input type="hidden" name="chapter_number" value="{{ $number }}">
-                    <div class="comment-container">
-                        <textarea name="comment" id="comment" rows="2" required placeholder="Comment as {{ Auth::user()->name }}"></textarea>
-                        <button type="submit" class="send-icon">Submit</button>
-                    </div>
-                </form>
-            </div>
+        <!-- Inline Buttons -->
+        <div class="inline-buttons">
+            <a href="{{ route('chapters') }}"><button class="btn-danger">Back</button></a>
+            <button id="comment-logo">Comments</button>
+            <a href="{{ route('games.game1') }}"><button class="btn-primary">Next</button></a>
         </div>
 
-   
+        <!-- Comments Section -->
+        <div id="comments-section" class="comments" style="display: none;">
+            <div class="comment-header">
+                <h3 class="comment-title">Comments</h3>
+                <button id="close-comments">×</button>
+            </div>
+            <div class="comment-content">
+                <ul class="comment-list">
+                    @if ($comments->isEmpty())
+                        <li class="no-comments">No comments yet. Be the first to comment!</li>
+                    @else
+                        @foreach ($comments as $comment)
+                            <li class="comment-item">
+                                <div class="comment-author">{{ $comment->user->name }}</div>
+                                <div class="comment-text">{{ $comment->comment }}</div>
+                                <div class="comment-time">{{ $comment->created_at->diffForHumans() }}</div>
+                            </li>
+                        @endforeach
+                    @endif
+                </ul>
+            </div>
+            <form action="{{ route('comments.store') }}" method="POST" class="comment-form">
+                @csrf
+                <!-- Pass dynamic values for chapter_number and chapter_id -->
+                <input type="hidden" name="chapter_number" value="{{ 1}}"> <!-- Dynamic chapter number -->
+                <input type="hidden" name="chapter_id" value="{{ 1 }}"> <!-- Dynamic chapter ID -->
+
+                <div class="comment-container">
+                    <!-- Comment textarea -->
+                    <textarea name="comment" id="comment" rows="2" required placeholder="Comment as {{ Auth::user()->name }}"></textarea>
+
+                    <!-- Submit button -->
+                    <button type="submit" class="send-icon">Submit</button>
+                </div>
+            </form>
 
 
-        <script src="https://unpkg.com/@popperjs/core@2"></script>
-        <script src="https://unpkg.com/tippy.js@6"></script>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
 
 </x-chapter-layout>
